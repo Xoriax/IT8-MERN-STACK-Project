@@ -69,6 +69,7 @@ function Navbar() {
                 <div className="popup">
                     <button className="close-btn" onClick={togglePopup}>X</button>
                     <ul className="popup-links">
+                        <li><Link to="/" onClick={togglePopup}>Accueil</Link></li>
                         <li><Link to="/" onClick={togglePopup}>Qui sommes-nous?</Link></li>
                         <li className="dropdown" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
                             <span>Prestations externalisées</span>
