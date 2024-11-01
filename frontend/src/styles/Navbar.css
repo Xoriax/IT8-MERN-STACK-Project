@@ -76,7 +76,8 @@
     text-decoration: none;
 }
 
-.navbar-links .navbar-links-hover:hover, .popup-links .navbar-links-hover:hover {
+.navbar-links .navbar-links-hover:hover,
+.popup-links .navbar-links-hover:hover {
     border: 2px solid #333;
     border-radius: 10px;
 }
