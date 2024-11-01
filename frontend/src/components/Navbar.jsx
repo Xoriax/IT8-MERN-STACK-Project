@@ -40,22 +40,22 @@ function Navbar() {
                     </button>
 
                     <ul className={`navbar-links ${isMobile && popupOpen ? 'hidden' : ''}`}>
-                        <li><Link to="/">Qui sommes-nous?</Link></li>
-                        <li className="dropdown" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+                        <li className='navbar-links-hover'><Link to="/WhoWeAre">Qui sommes-nous?</Link></li>
+                        <li className="dropdown navbar-links-hover" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
                             <span>Prestations externalisées</span>
                             {dropdownOpen && (
                                 <ul className="dropdown-menu">
-                                    <li><Link to="/IToutsourcing">Infogérance</Link></li>
-                                    <li><Link to="/CollabSolu">Solutions Collaboratives</Link></li>
-                                    <li><Link to="/Cybersecuriry">Cybersécurité</Link></li>
-                                    <li><Link to="/DBM">Sauvegarde et Gestion de Données</Link></li>
-                                    <li><Link to="/TT">Téléphonie / TEAMS</Link></li>
-                                    <li><Link to="/ML">Matériels / Logiciels</Link></li>
+                                    <li className='navbar-links-hover'><Link to="/IToutsourcing">Infogérance</Link></li>
+                                    <li className='navbar-links-hover'><Link to="/CollabSolu">Solutions Collaboratives</Link></li>
+                                    <li className='navbar-links-hover'><Link to="/Cybersecuriry">Cybersécurité</Link></li>
+                                    <li className='navbar-links-hover'><Link to="/DBM">Sauvegarde et Gestion de Données</Link></li>
+                                    <li className='navbar-links-hover'><Link to="/TT">Téléphonie / TEAMS</Link></li>
+                                    <li className='navbar-links-hover'><Link to="/ML">Matériels / Logiciels</Link></li>
                                 </ul>
                             )}
                         </li>
-                        <li><Link to="/">Régie sur site</Link></li>
-                        <li><Link to="/contact">Contactez-nous</Link></li>
+                        <li className='navbar-links-hover'><Link to="/">Régie sur site</Link></li>
+                        <li className='navbar-links-hover'><Link to="/contact">Contactez-nous</Link></li>
                         <li>
                             <a href="mailto:contact@it8-solutions.com?subject=Objet%20Demande%20de%20Renseignement">
                                 <button className="cta">Contacter un Commercial</button>
@@ -69,23 +69,23 @@ function Navbar() {
                 <div className="popup">
                     <button className="close-btn" onClick={togglePopup}>X</button>
                     <ul className="popup-links">
-                        <li><Link to="/" onClick={togglePopup}>Accueil</Link></li>
-                        <li><Link to="/" onClick={togglePopup}>Qui sommes-nous?</Link></li>
-                        <li className="dropdown" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+                        <li className='navbar-links-hover'><Link to="/" onClick={togglePopup}>Accueil</Link></li>
+                        <li className='navbar-links-hover'><Link to="/WhoWeAre" onClick={togglePopup}>Qui sommes-nous?</Link></li>
+                        <li className="dropdown navbar-links-hover" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
                             <span>Prestations externalisées</span>
                             {dropdownOpen && (
                                 <ul className="dropdown-menu">
-                                    <li><Link to="/IToutsourcing" onClick={togglePopup}>Infogérance</Link></li>
-                                    <li><Link to="/CollabSolu" onClick={togglePopup}>Solutions Collaboratives</Link></li>
-                                    <li><Link to="/Cybersecuriry" onClick={togglePopup}>Cybersécurité</Link></li>
-                                    <li><Link to="/DBM" onClick={togglePopup}>Sauvegarde et Gestion de Données</Link></li>
-                                    <li><Link to="/TT" onClick={togglePopup}>Téléphonie / TEAMS</Link></li>
-                                    <li><Link to="/ML" onClick={togglePopup}>Matériels / Logiciels</Link></li>
+                                    <li className='navbar-links-hover'><Link to="/IToutsourcing" onClick={togglePopup}>Infogérance</Link></li>
+                                    <li className='navbar-links-hover'><Link to="/CollabSolu" onClick={togglePopup}>Solutions Collaboratives</Link></li>
+                                    <li className='navbar-links-hover'><Link to="/Cybersecuriry" onClick={togglePopup}>Cybersécurité</Link></li>
+                                    <li className='navbar-links-hover'><Link to="/DBM" onClick={togglePopup}>Sauvegarde et Gestion de Données</Link></li>
+                                    <li className='navbar-links-hover'><Link to="/TT" onClick={togglePopup}>Téléphonie / TEAMS</Link></li>
+                                    <li className='navbar-links-hover'><Link to="/ML" onClick={togglePopup}>Matériels / Logiciels</Link></li>
                                 </ul>
                             )}
                         </li>
-                        <li><Link to="/" onClick={togglePopup}>Régie sur site</Link></li>
-                        <li><Link to="/contact" onClick={togglePopup}>Contactez-nous</Link></li>
+                        <li className='navbar-links-hover'><Link to="/" onClick={togglePopup}>Régie sur site</Link></li>
+                        <li className='navbar-links-hover'><Link to="/contact" onClick={togglePopup}>Contactez-nous</Link></li>
                         <li>
                             <a
                                 href="mailto:contact@it8-solutions.com?subject=Objet%20Demande%20de%20Renseignement"

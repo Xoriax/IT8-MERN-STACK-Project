@@ -9,6 +9,7 @@ import DBM from './pages/dropdown/DBM';
 import TT from './pages/dropdown/TT';
 import ML from './pages/dropdown/ML';
 import Navbar from './components/Navbar';
+import WhoWeAre from './pages/WhoWeAre';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/DBM" element={<DBM />} />
         <Route path="/TT" element={<TT />} />
         <Route path="/ML" element={<ML />} />
+        <Route path="/WhoWeAre" element={<WhoWeAre />} />
       </Routes>
     </Router>
   );
