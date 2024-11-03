@@ -54,6 +54,7 @@
 .description {
     margin: 1rem 0;
     font-size: 1.2rem;
+    font-weight: bold;
     color: #333;
     text-align: center;
 }
@@ -101,6 +102,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    font-weight: bold;
 }
 
 .right-box {
@@ -139,6 +141,7 @@ li {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: rgb(46, 147, 197);
+    font-weight: bold;
     color: white;
     border: none;
     border-radius: 5px;
@@ -156,6 +159,75 @@ li {
     height: auto;
 }
 
+.clients-banner {
+    width: 100%;
+    padding: 20px 0;
+    background: linear-gradient(90deg, rgba(45, 48, 143, 1) 0%, rgba(53, 166, 222, 1) 100%);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.clients-banner h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.clients-banner p {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.partner-section {
+    display: flex;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.partner-left-box,
+.partner-right-box {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-left-box {
+    justify-content: center;
+}
+
+.partner-right-box {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
+    padding: 20px 100px 20px 20px;
+}
+
+.partner-image {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+}
+
+.partner-right-box h3 {
+    font-size: 1.8rem;
+    color: rgb(46, 147, 197);
+    margin-bottom: 1rem;
+}
+
+.partner-right-box p {
+    font-size: 1.2rem;font-weight: bold;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.partner-right-box .contact-button {
+    margin-top: 20px;
+}
 
 @media (max-width: 780px) {
     .hero-overlay h1 {
@@ -169,8 +241,32 @@ li {
 }
 
 @media (max-width: 650px) {
-    .right-box {
+
+    .right-box,
+    .partner-left-box {
         display: none;
+    }
+
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-box {
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .partner-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partner-right-box {
+        padding: 20px;
+        text-align: center;
+        align-items: center;
     }
 }
 
