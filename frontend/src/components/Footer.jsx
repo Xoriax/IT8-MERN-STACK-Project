@@ -25,15 +25,15 @@ function Footer() {
                     <h3>Nos Services</h3>
                     <div className="services-columns">
                         <ul>
-                            <li>Infogérance</li>
-                            <li>Solutions Collaboratives</li>
-                            <li>Cybersécurité</li>
-                            <li>Sauvegarde et Gestion de données</li>
+                            <li className='navbar-links-hover'><Link to="/IToutsourcing">Infogérance</Link></li>
+                            <li className='navbar-links-hover'><Link to="/CollabSolu">Solutions Collaboratives</Link></li>
+                            <li className='navbar-links-hover'><Link to="/Cybersecuriry">Cybersécurité</Link></li>
+                            <li className='navbar-links-hover'><Link to="/DBM">Sauvegarde et Gestion de Données</Link></li>
                         </ul>
                         <ul>
-                            <li>Téléphonie / TEAMS</li>
-                            <li>Matériels / Logiciels</li>
-                            <li>Régie sur site</li>
+                            <li className='navbar-links-hover'><Link to="/TT">Téléphonie / TEAMS</Link></li>
+                            <li className='navbar-links-hover'><Link to="/ML">Matériels / Logiciels</Link></li>
+                            <li className='navbar-links-hover'><Link to="/">Régie sur site</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ function Footer() {
                         </div>
                         <div className="contact-item">
                             <img src={PhoneIcon} alt="Phone" className="icon" />
-                            <span>Tel : +33 1 78 91 18 80</span>
+                            <span><a href="tel:+33178911880">Tel : +33 1 78 91 18 80</a></span>
                         </div>
                     </div>
                 </div>
