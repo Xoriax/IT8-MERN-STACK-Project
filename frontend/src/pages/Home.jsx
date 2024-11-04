@@ -52,7 +52,7 @@ function Home() {
                         <li><img src={DotCheckdIcon} alt="Dot Check" className="dot-icon" /> Services clés en main: adaptables et évolutifs</li>
                     </ul>
                     <a href="mailto:contact@it8-solutions.com?subject=Objet%20Demande%20de%20Renseignement">
-                        <button className="contact-button">Contacter un Commercial</button>
+                        <button className="contact-button">Contactez-nous</button>
                     </a>
                 </div>
 
@@ -75,7 +75,7 @@ function Home() {
                     <p>Nous sommes présents dans toute la France grâce à notre réseau de partenaires certifiés.</p>
                     <p>Cette expertise est mise à votre disposition pour la gestion efficace de vos infrastructures informatiques.</p>
                     <a href="mailto:contact@it8-solutions.com?subject=Objet%20Demande%20de%20Renseignement">
-                        <button className="contact-button">Contacter un Commercial</button>
+                        <button className="contact-button">Contactez-nous</button>
                     </a>
                 </div>
             </div>

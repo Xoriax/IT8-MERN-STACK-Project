@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
-import logo from '../assets/images/IT8Logo.png';
+import logo from '../assets/images/Navbar/IT8Logo.png';
 
 function Navbar() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -55,10 +55,9 @@ function Navbar() {
                             )}
                         </li>
                         <li className='navbar-links-hover'><Link to="/">Régie sur site</Link></li>
-                        <li className='navbar-links-hover'><Link to="/contact">Contactez-nous</Link></li>
                         <li>
                             <a href="mailto:contact@it8-solutions.com?subject=Objet%20Demande%20de%20Renseignement">
-                                <button className="cta">Contacter un Commercial</button>
+                                <button className="cta">Contactez-nous</button>
                             </a>
                         </li>
                     </ul>
@@ -85,13 +84,12 @@ function Navbar() {
                             )}
                         </li>
                         <li className='navbar-links-hover'><Link to="/" onClick={togglePopup}>Régie sur site</Link></li>
-                        <li className='navbar-links-hover'><Link to="/contact" onClick={togglePopup}>Contactez-nous</Link></li>
                         <li>
                             <a
                                 href="mailto:contact@it8-solutions.com?subject=Objet%20Demande%20de%20Renseignement"
                                 onClick={togglePopup}
                             >
-                                <button className="cta">Contacter un Commercial</button>
+                                <button className="cta">Contactez-nous</button>
                             </a>
                         </li>
                     </ul>
