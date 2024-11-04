@@ -43,7 +43,7 @@ function Footer() {
                     <div className="contact-info">
                         <div className="contact-item">
                             <img src={LocationIcon} alt="Location" className="icon" />
-                            <span>47 Rue du Père Corentin<br />75014 Paris</span>
+                            <span><a href="https://maps.app.goo.gl/Z7Ub3nU17PTxpbKc7" target='blank'>47 Rue du Père Corentin<br />75014 Paris</a></span>
                         </div>
                         <div className="contact-item">
                             <img src={ClockIcon} alt="Clock" className="icon" />
