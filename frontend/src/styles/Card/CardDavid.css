@@ -1,24 +1,24 @@
-.container-card * {
+.container-card-david * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-.container-card {
+.container-card-david {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.card {
+.card-david {
     width: 350px;
     height: 515px;
     perspective: 1000px;
     margin: 20px;
 }
 
-.card-inner {
+.card-inner-david {
     width: 100%;
     height: 100%;
     position: relative;
@@ -27,8 +27,8 @@
     cursor: pointer;
 }
 
-.front,
-.back {
+.front-david,
+.back-david {
     width: 100%;
     height: 100%;
     border-radius: 15px;
@@ -36,8 +36,8 @@
     backface-visibility: hidden;
 }
 
-.front {
-    background: url('../../assets/images/Card/user.png') center/cover no-repeat;
+.front-david {
+    background: url('../../assets/images/Card/david.png') center/cover no-repeat;
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
@@ -45,16 +45,16 @@
     color: #fff;
 }
 
-.front .front-card-h2 {
+.front-david .front-card-h2-david {
     font-weight: 500;
 }
 
-.front .front-card-p {
+.front-david .front-card-p-david {
     color: #ccc;
     font-size: 13px;
 }
 
-.front .front-card-btn {
+.front-david .front-card-btn-david {
     width: 150px;
     border: 1px solid #fff;
     background: transparent;
@@ -65,7 +65,7 @@
     color: #fff;
 }
 
-.back {
+.back-david {
     background: #fff;
     color: #333;
     padding: 20px 40px;
@@ -73,35 +73,35 @@
     border: 1px solid #333;
 }
 
-.back .back-card-h1 {
+.back-david .back-card-h1-david {
     font-weight: bold;
     line-height: 55px;
     margin-bottom: 10px;
 }
 
-.back .back-card-span {
+.back-david .back-card-span-david {
     font-weight: 400;
 }
 
-.back .back-card-p {
+.back-david .back-card-p-david {
     font-size: 14px;
 }
 
-.back .back-card-p span {
+.back-david .back-card-p-david span {
     font-weight: 600;
 }
 
-.back .back-card-img {
+.back-david .back-card-img-david {
     width: 120px;
 }
 
-.row {
+.row-david {
     display: flex;
     align-items: center;
     margin-top: 30px;
 }
 
-.back .row button {
+.back-david .row-david button {
     background: #007bff;
     color: #fff;
     border: 0;
@@ -112,7 +112,7 @@
     box-shadow: 0 8px 10px rgba(120, 0, 173, 0.3);
 }
 
-.back .back-card-link {
+.back-david .back-card-link-david {
     width: 40px;
     height: 40px;
     border: 1px solid #333;
@@ -124,10 +124,10 @@
     margin: 0 5px;
 }
 
-.back .back-card-link img {
+.back-david .back-card-link-david img {
     width: 50%;
 }
 
-.card:hover .card-inner {
+.card-david:hover .card-inner-david {
     transform: rotateY(180deg);
 }
