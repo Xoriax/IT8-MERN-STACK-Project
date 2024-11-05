@@ -1,0 +1,133 @@
+.container-card * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    width: 350px;
+    height: 515px;
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: url('../../assets/images/Card/user.png') center/cover no-repeat;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.front .front-card-h2 {
+    font-weight: 500;
+}
+
+.front .front-card-p {
+    color: #ccc;
+    font-size: 13px;
+}
+
+.front .front-card-btn {
+    width: 150px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.back {
+    background: #fff;
+    color: #333;
+    padding: 20px 40px;
+    transform: rotateY(180deg);
+    border: 1px solid #333;
+}
+
+.back .back-card-h1 {
+    font-weight: bold;
+    line-height: 55px;
+    margin-bottom: 10px;
+}
+
+.back .back-card-span {
+    font-weight: 400;
+}
+
+.back .back-card-p {
+    font-size: 14px;
+}
+
+.back .back-card-p span {
+    font-weight: 600;
+}
+
+.back .back-card-img {
+    width: 120px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.back .row button {
+    background: #007bff;
+    color: #fff;
+    border: 0;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin: 0 15px 20px 0;
+    box-shadow: 0 8px 10px rgba(120, 0, 173, 0.3);
+}
+
+.back .back-card-link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.back .back-card-link img {
+    width: 50%;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}

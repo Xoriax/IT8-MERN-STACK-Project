@@ -49,7 +49,7 @@ function Home() {
                         <li><img src={DotCheckdIcon} alt="Dot Check" className="dot-icon" /> Un support disponible à distance pour plus d'efficacité</li>
                         <li><img src={DotCheckdIcon} alt="Dot Check" className="dot-icon" /> Un interlocuteur proche de vous et de vos employés</li>
                         <li><img src={DotCheckdIcon} alt="Dot Check" className="dot-icon" /> Une technologie de pointe, au service de la simplicité</li>
-                        <li><img src={DotCheckdIcon} alt="Dot Check" className="dot-icon" /> Services clés en main: adaptables et évolutifs</li>
+                        <li><img src={DotCheckdIcon} alt="Dot Check" className="dot-icon" /> Services clés en main : adaptables et évolutifs</li>
                     </ul>
                     <a href="mailto:contact@it8-solutions.com?subject=Objet%20Demande%20de%20Renseignement">
                         <button className="contact-button">Contactez-nous</button>
