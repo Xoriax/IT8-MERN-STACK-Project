@@ -11,7 +11,7 @@ function CardDavid() {
 
                     <div className="front">
                         <h2 className="front-card-h2">DAVID DO</h2>
-                        <p className="front-card-p">DIRIGEANTS IT8 SOLUTIONS, FRANCE</p>
+                        <p className="front-card-p">PRÉSIDENT <br /> DIRECTEUR COMMERCIAL <br /> IT8 SOLUTIONS, FRANCE</p>
                         <button className="front-card-btn">MORE INFORMATION</button>
                     </div>
 

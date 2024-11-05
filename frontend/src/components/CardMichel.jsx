@@ -10,16 +10,16 @@ function CardMichel() {
                 <div className="card-inner">
 
                     <div className="front">
-                        <h2 className="front-card-h2">Test</h2>
-                        <p className="front-card-p">POSTE, FRANCE</p>
-                        <button className="front-card-btn">PLUS D'INFORMATION</button>
+                        <h2 className="front-card-h2">MICHEL KHAMXAY</h2>
+                        <p className="front-card-p">PRÉSIDENT, <br /> DIRECTEUR TECHNIQUE, <br /> IT8 SOLUTIONS, FRANCE</p>
+                        <button className="front-card-btn">MORE INFORMATION</button>
                     </div>
 
                     <div className="back">
 
                         <img className="back-card-img" src={WavingHand} alt="Waving hand" />
                         <h1 className="back-card-h1">
-                            TEST <span className="back-card-span">test</span>
+                            MICHEL <span className="back-card-span">KHAMXAY</span>
                         </h1>
                         <p className="back-card-p">
                             Texte présentation de la personne pour expliquer qui il est au sein d' <span className="back-card-span">IT8 SOLUTIONS</span>

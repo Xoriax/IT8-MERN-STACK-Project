@@ -220,7 +220,8 @@ li {
 }
 
 .partner-right-box p {
-    font-size: 1.2rem;font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: bold;
     color: #333;
     margin: 0.5rem 0;
 }
@@ -241,6 +242,20 @@ li {
 }
 
 @media (max-width: 650px) {
+
+    .hero-overlay-text {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .hero-overlay-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-overlay-text p {
+        font-size: 1rem;
+    }
 
     .right-box,
     .partner-left-box {
@@ -267,21 +282,5 @@ li {
         padding: 20px;
         text-align: center;
         align-items: center;
-    }
-}
-
-@media (max-width: 380px) {
-    .hero-overlay-text {
-        width: 100%;
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .hero-overlay-text h1 {
-        font-size: 2rem;
-    }
-
-    .hero-overlay-text p {
-        font-size: 1rem;
     }
 }
