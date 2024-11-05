@@ -12,9 +12,9 @@ function Footer() {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-box footer-left-box">
-                    <Link to="/">
+                    <a href='/'>
                         <img src={Logo} alt="Logo" />
-                    </Link>
+                    </a>
                     <p>Suivez-nous sur :</p>
                     <a href="https://www.linkedin.com/company/it8-solutions/" target="_blank" rel="noopener noreferrer">
                         <img src={LinkedInLogo} alt="LinkedIn" className="social-icon" />
