@@ -10,6 +10,7 @@ import ML from './pages/dropdown/ML';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhoWeAre from './pages/WhoWeAre';
+import OnSiteManagement from './pages/OnSiteManagement';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/TT" element={<TT />} />
         <Route path="/ML" element={<ML />} />
         <Route path="/WhoWeAre" element={<WhoWeAre />} />
+        <Route path="/OnSiteManagement" element={<OnSiteManagement />} />
       </Routes>
       <Footer />
     </Router>

@@ -54,7 +54,7 @@ function Navbar() {
                                 </ul>
                             )}
                         </li>
-                        <li className='navbar-links-hover'><Link to="/">Régie sur site</Link></li>
+                        <li className='navbar-links-hover'><Link to="/OnSiteManagement">Régie sur site</Link></li>
                         <li>
                             <a href="mailto:contact@it8-solutions.com?subject=Objet%20Demande%20de%20Renseignement">
                                 <button className="cta">Contactez-nous</button>
@@ -83,7 +83,7 @@ function Navbar() {
                                 </ul>
                             )}
                         </li>
-                        <li className='navbar-links-hover'><Link to="/" onClick={togglePopup}>Régie sur site</Link></li>
+                        <li className='navbar-links-hover'><Link to="/OnSiteManagement" onClick={togglePopup}>Régie sur site</Link></li>
                         <li>
                             <a
                                 href="mailto:contact@it8-solutions.com?subject=Objet%20Demande%20de%20Renseignement"

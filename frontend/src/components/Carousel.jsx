@@ -44,15 +44,21 @@ function Carousel() {
             <div className="carousel-container">
                 <div className="carousel-box prev">
                     <img src={images[prevIndex].src} alt={images[prevIndex].alt} className="carousel-image" />
-                    <div className="image-title">{images[prevIndex].alt}</div>
+                    <div className="image-title">
+                        <p>{images[prevIndex].alt}</p>
+                    </div>
                 </div>
                 <div className="carousel-box active">
                     <img src={images[currentIndex].src} alt={images[currentIndex].alt} className="carousel-image" />
-                    <div className="image-title">{images[currentIndex].alt}</div>
+                    <div className="image-title">
+                        <p>{images[currentIndex].alt}</p>
+                    </div>
                 </div>
                 <div className="carousel-box next">
                     <img src={images[nextIndex].src} alt={images[nextIndex].alt} className="carousel-image" />
-                    <div className="image-title">{images[nextIndex].alt}</div>
+                    <div className="image-title">
+                        <p>{images[nextIndex].alt}</p>
+                    </div>
                 </div>
             </div>
             <button className="prev" onClick={prevSlide}>❮</button>

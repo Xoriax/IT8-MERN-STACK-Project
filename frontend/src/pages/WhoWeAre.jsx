@@ -37,11 +37,6 @@ function WhoWeAre() {
                 <h3>Nos Dirigeants</h3>
             </div>
 
-            <div className="card-container">
-                <CardDavid />
-                <CardMichel />
-            </div>
-
             <div className="WhoWeAre-banner">
                 <h3>Nos Missions</h3>
             </div>
@@ -77,17 +72,6 @@ function WhoWeAre() {
             </div>
 
             <div className="WhoWeAre-banner">
-                <h3>Flexibilité et expertise</h3>
-            </div>
-            <div className="flexibilite-text">
-                <p>
-                    Nous intervenons sur des missions de toute durée, allant de quelques heures pour des besoins
-                    ponctuels à des collaborations de plusieurs mois ou années pour l’installation et la gestion
-                    complète de systèmes IT complexes.
-                </p>
-            </div>
-
-            <div className="WhoWeAre-banner">
                 <h3>“ Votre réussite est notre fierté ”</h3>
             </div>
             <div className="end-text">
@@ -110,6 +94,11 @@ function WhoWeAre() {
                     En choisissant IT-8 Solutions, vous optez pour une expertise diversifiée, un service sur-mesure, et un
                     engagement indéfectible envers la satisfaction de vos besoins informatiques.
                 </p>
+            </div>
+
+            <div className="card-container">
+                <CardDavid />
+                <CardMichel />
             </div>
 
         </div>

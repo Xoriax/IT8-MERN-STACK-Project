@@ -43,18 +43,24 @@
 
 .image-title {
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: white;
-    color: rgb(46, 147, 197);
-    font-weight: bolder;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(45, 48, 143, 0.8) 0%, rgba(53, 166, 222, 0.6) 100%);
+    color: white;
+    font-weight: bold;
     padding: 15px;
-    border-radius: 10px;
-    font-size: 16px;
-    width: 80%;
-    text-align: center;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0 100% 0 0;
+    font-size: 18px;
+    width: 65%;
+    height: 40%;
+    display: flex;
+    align-items: last baseline;
+    justify-content: cen;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.image-title p {
+    margin-bottom: 15%;
 }
 
 button.prev,
@@ -86,5 +92,9 @@ button.next {
     .carousel-box.prev,
     .carousel-box.next {
         display: none;
+    }
+
+    .image-title p {
+        margin-bottom: 10%;
     }
 }
