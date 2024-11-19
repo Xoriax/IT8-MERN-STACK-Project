@@ -58,9 +58,9 @@ function OnSiteManagement() {
                         <h1>Régie sur site</h1>
                         <p>
                             <strong>L’ensemble de vos besoins informatiques pris en charge</strong><br /><br />
-                            Notre service informatique s’engage à répondre à l’ensemble
-                            de vos besoins en matière de gestion, maintenance et sécurité
-                            de votre infrastructure.
+                            Notre service informatique s’engage à répondre à l’ensemble de vos besoins en matière de gestion,
+                            maintenance et sécurité de votre infrastructure. Nous offrons une gamme complète de services
+                            pour garantir le bon fonctionnement de vos outils numériques, à distance comme sur site.
                         </p>
                     </div>
                 </div>

@@ -168,10 +168,6 @@
     transition: transform 0.2s ease-in-out;
 }
 
-.logos-slide img:hover {
-    transform: scale(1.1);
-}
-
 .h3-autoscroll {
     color: #fff;
     text-align: center;

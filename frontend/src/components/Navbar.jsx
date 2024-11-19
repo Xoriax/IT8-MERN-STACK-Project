@@ -4,17 +4,11 @@ import '../styles/Navbar.css';
 import logo from '../assets/images/Navbar/IT8Logo.png';
 
 function Navbar() {
-    const [dropdownOpen, setDropdownOpen] = useState(false);
-    const [popupOpen, setPopupOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
 
-    const toggleDropdown = () => {
-        setDropdownOpen(!dropdownOpen);
-    };
-
-    const togglePopup = () => {
-        setPopupOpen(!popupOpen);
-        setDropdownOpen(false);
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
     };
 
     useEffect(() => {
@@ -34,67 +28,90 @@ function Navbar() {
                     </Link>
                 </div>
 
-                <div className="navbar-links-container">
-                    <button className={`menu-btn ${isMobile && !popupOpen ? 'show' : ''}`} onClick={togglePopup}>
-                        Menu
-                    </button>
+                {isMobile && (
+                    <div className="navbar-contact">
+                        <a
+                            href="mailto:contact@it8-solutions.com?subject=Objet%20Demande%20de%20Renseignement"
+                        >
+                            <button className="cta">Contactez-nous</button>
+                        </a>
+                    </div>
+                )}
 
-                    <ul className={`navbar-links ${isMobile && popupOpen ? 'hidden' : ''}`}>
-                        <li className='navbar-links-hover'><Link to="/WhoWeAre">Qui sommes-nous?</Link></li>
-                        <li className="dropdown navbar-links-hover" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
-                            <span>Prestations externalisées</span>
-                            {dropdownOpen && (
-                                <ul className="dropdown-menu">
-                                    <li className='navbar-links-hover'><Link to="/IToutsourcing">Infogérance</Link></li>
-                                    <li className='navbar-links-hover'><Link to="/CollabSolu">Solutions Collaboratives</Link></li>
-                                    <li className='navbar-links-hover'><Link to="/Cybersecuriry">Cybersécurité</Link></li>
-                                    <li className='navbar-links-hover'><Link to="/DBM">Sauvegarde et Gestion de Données</Link></li>
-                                    <li className='navbar-links-hover'><Link to="/TT">Téléphonie / TEAMS</Link></li>
-                                    <li className='navbar-links-hover'><Link to="/ML">Matériels / Logiciels</Link></li>
-                                </ul>
-                            )}
-                        </li>
-                        <li className='navbar-links-hover'><Link to="/OnSiteManagement">Régie sur site</Link></li>
-                        <li>
-                            <a href="mailto:contact@it8-solutions.com?subject=Objet%20Demande%20de%20Renseignement">
-                                <button className="cta">Contactez-nous</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                {isMobile && (
+                    <div
+                        className={`burger-icon ${menuOpen ? 'open' : ''}`}
+                        onClick={toggleMenu}
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                )}
+
+                <ul className={`navbar-links ${isMobile && menuOpen ? 'show-menu' : ''}`}>
+                    <li>
+                        <Link to="/WhoWeAre" onClick={() => setMenuOpen(false)}>
+                            Qui sommes-nous?
+                        </Link>
+                    </li>
+                    <li className="dropdown">
+                        <span>Prestations externalisées</span>
+                        <ul className="dropdown-menu">
+                            <li>
+                                <Link to="/IToutsourcing" onClick={() => setMenuOpen(false)}>
+                                    Infogérance
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to="/CollabSolu" onClick={() => setMenuOpen(false)}>
+                                    Solutions Collaboratives
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to="/Cybersecuriry" onClick={() => setMenuOpen(false)}>
+                                    Cybersécurité
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to="/DBM" onClick={() => setMenuOpen(false)}>
+                                    Sauvegarde et Gestion de Données
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to="/TT" onClick={() => setMenuOpen(false)}>
+                                    Téléphonie / TEAMS
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to="/ML" onClick={() => setMenuOpen(false)}>
+                                    Matériels / Logiciels
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <Link to="/OnSiteManagement" onClick={() => setMenuOpen(false)}>
+                            Régie sur site
+                        </Link>
+                    </li>
+                </ul>
+
+                {!isMobile && (
+                    <div className="navbar-contact-desktop">
+                        <a
+                            href="mailto:contact@it8-solutions.com?subject=Objet%20Demande%20de%20Renseignement"
+                        >
+                            <button className="cta">Contactez-nous</button>
+                        </a>
+                    </div>
+                )}
             </div>
-
-            {popupOpen && (
-                <div className="popup">
-                    <button className="close-btn" onClick={togglePopup}>X</button>
-                    <ul className="popup-links">
-                        <li className='navbar-links-hover'><Link to="/" onClick={togglePopup}>Accueil</Link></li>
-                        <li className='navbar-links-hover'><Link to="/WhoWeAre" onClick={togglePopup}>Qui sommes-nous?</Link></li>
-                        <li className="dropdown navbar-links-hover" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
-                            <span>Prestations externalisées</span>
-                            {dropdownOpen && (
-                                <ul className="dropdown-menu">
-                                    <li className='navbar-links-hover'><Link to="/IToutsourcing" onClick={togglePopup}>Infogérance</Link></li>
-                                    <li className='navbar-links-hover'><Link to="/CollabSolu" onClick={togglePopup}>Solutions Collaboratives</Link></li>
-                                    <li className='navbar-links-hover'><Link to="/Cybersecuriry" onClick={togglePopup}>Cybersécurité</Link></li>
-                                    <li className='navbar-links-hover'><Link to="/DBM" onClick={togglePopup}>Sauvegarde et Gestion de Données</Link></li>
-                                    <li className='navbar-links-hover'><Link to="/TT" onClick={togglePopup}>Téléphonie / TEAMS</Link></li>
-                                    <li className='navbar-links-hover'><Link to="/ML" onClick={togglePopup}>Matériels / Logiciels</Link></li>
-                                </ul>
-                            )}
-                        </li>
-                        <li className='navbar-links-hover'><Link to="/OnSiteManagement" onClick={togglePopup}>Régie sur site</Link></li>
-                        <li>
-                            <a
-                                href="mailto:contact@it8-solutions.com?subject=Objet%20Demande%20de%20Renseignement"
-                                onClick={togglePopup}
-                            >
-                                <button className="cta">Contactez-nous</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            )}
         </nav>
     );
 }
