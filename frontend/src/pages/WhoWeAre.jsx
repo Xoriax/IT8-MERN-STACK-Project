@@ -34,10 +34,6 @@ function WhoWeAre() {
             </div>
 
             <div className="WhoWeAre-banner">
-                <h3>Nos Dirigeants</h3>
-            </div>
-
-            <div className="WhoWeAre-banner">
                 <h3>Nos Missions</h3>
             </div>
             <div className="missions-text">
@@ -94,6 +90,10 @@ function WhoWeAre() {
                     En choisissant IT-8 Solutions, vous optez pour une expertise diversifiée, un service sur-mesure, et un
                     engagement indéfectible envers la satisfaction de vos besoins informatiques.
                 </p>
+            </div>
+
+            <div className="WhoWeAre-banner">
+                <h3>Nos Dirigeants</h3>
             </div>
 
             <div className="card-container">

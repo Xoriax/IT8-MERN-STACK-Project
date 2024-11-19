@@ -174,7 +174,7 @@
 
 .h3-autoscroll {
     color: #fff;
-    margin: auto;
+    text-align: center;
 }
 
 @media (max-width: 990px) {

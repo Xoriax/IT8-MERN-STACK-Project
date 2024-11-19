@@ -29,7 +29,10 @@
 }
 
 .hero-overlay-OnSiteManagement-text {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     padding: 2rem;
     color: white;
     box-sizing: border-box;
@@ -37,72 +40,475 @@
 
 .hero-overlay-OnSiteManagement h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-right: 20%;
+    flex-shrink: 0;
+}
+
+.hero-overlay-OnSiteManagement p {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 @media (max-width: 650px) {
     .hero-overlay-OnSiteManagement-text {
-        width: 100%;
-        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-    .hero-overlay-OnSiteManagement-text h1 {
+    .hero-overlay-OnSiteManagement h1 {
         font-size: 2rem;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .hero-overlay-OnSiteManagement p {
+        font-size: 1rem;
+        text-align: center;
     }
 }
 
-.text p {
+@media (max-width: 880px) {
+    .hero-OnSiteManagement h1 {
+        font-size: 2rem;
+    }
+
+    .hero-OnSiteManagement p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero-OnSiteManagement h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-OnSiteManagement p {
+        font-size: 0.8rem;
+    }
+}
+
+.text-content {
     width: 95%;
     margin: 20px auto;
     text-align: center;
     font-size: 1.1rem;
     line-height: 1.6;
     color: #333;
+}
+
+.hexagon-text-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    margin: auto;
+}
+
+.hexagon-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 100px 0;
+    flex: 1;
+}
+
+.info-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+    text-align: center;
+    margin: 0 50px;
+}
+
+.info-box h2 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #2d308f;
+}
+
+.info-box p {
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.6;
     font-weight: bold;
 }
 
-.boxes {
+.nonagone {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: #2d308f;
+    --o: calc(50%*tan(-22.5deg));
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.box {
-    width: calc(50% - 20px);
-    padding: 20px;
-    background: linear-gradient(90deg, rgba(45, 48, 143, 1) 0%, rgba(53, 166, 222, 1) 100%);
-    border: 2px solid #2d308f;
-    border-radius: 20px;
-    box-sizing: border-box;
+    align-items: center;
     color: white;
-}
-
-.box:nth-child(2n) {
-    background: linear-gradient(90deg, rgba(53, 166, 222, 1) 0%, rgba(45, 48, 143, 1) 100%);
-    border: 2px solid #2d308f;
-    color: #fff;
-}
-
-.box.full-width {
-    width: 100%;
+    font-size: 1.5rem;
     text-align: center;
+    z-index: -2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    padding: 20px;
 }
 
-.box h2 {
-    margin-bottom: 1rem;
+.center-logo {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
 }
 
-.box p {
+.hexagon {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(90deg, rgba(45, 48, 143, 1) 0%, rgba(53, 166, 222, 1) 100%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    z-index: 1;
+}
+
+.hexagon span {
+    display: block;
     font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    white-space: normal;
 }
 
-@media (max-width: 750px) {
-    .box {
-        width: 100%;
-        /* Single column on smaller screens */
+.hexagon:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, rgba(53, 166, 222, 1) 0%, rgba(45, 48, 143, 1) 100%);
+}
+
+.hexagon:nth-child(10) {
+    transform: rotate(10deg) translate(300px) rotate(0deg);
+}
+
+.hexagon:nth-child(10) span {
+    transform: rotate(-10deg);
+}
+
+.hexagon:nth-child(2) {
+    transform: rotate(50deg) translate(300px) rotate(0deg);
+}
+
+.hexagon:nth-child(2) span {
+    transform: rotate(-50deg);
+}
+
+.hexagon:nth-child(3) {
+    transform: rotate(90deg) translate(300px) rotate(0deg);
+}
+
+.hexagon:nth-child(3) span {
+    transform: rotate(-90deg);
+}
+
+.hexagon:nth-child(4) {
+    transform: rotate(130deg) translate(300px) rotate(-180deg);
+}
+
+.hexagon:nth-child(4) span {
+    transform: rotate(50deg);
+}
+
+.hexagon:nth-child(5) {
+    transform: rotate(170deg) translate(300px) rotate(-180deg);
+}
+
+.hexagon:nth-child(5) span {
+    transform: rotate(10deg);
+}
+
+.hexagon:nth-child(6) {
+    transform: rotate(210deg) translate(300px) rotate(-180deg);
+}
+
+.hexagon:nth-child(6) span {
+    transform: rotate(-30deg);
+}
+
+.hexagon:nth-child(7) {
+    transform: rotate(250deg) translate(300px) rotate(-180deg);
+}
+
+.hexagon:nth-child(7) span {
+    transform: rotate(-70deg);
+}
+
+.hexagon:nth-child(8) {
+    transform: rotate(290deg) translate(300px) rotate(-180deg);
+}
+
+.hexagon:nth-child(8) span {
+    transform: rotate(-110deg);
+}
+
+.hexagon:nth-child(9) {
+    transform: rotate(330deg) translate(300px) rotate(-360deg);
+}
+
+.hexagon:nth-child(9) span {
+    transform: rotate(30deg);
+}
+
+.accordion-section {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-title {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(45, 48, 143, 1) 0%, rgba(53, 166, 222, 1) 100%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.accordion-content {
+    background-color: #f7f7f7;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+@media (max-width: 1665px) {
+    .hexagon-container {
+        width: 500px;
+        height: 500px;
+    }
+
+    .hexagon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hexagon span {
+        font-size: 0.7rem;
+    }
+
+    .nonagone {
+        width: 150px;
+        height: 150px;
+        font-size: 1rem;
+    }
+
+    .info-box {
+        height: 500px;
+    }
+
+    .info-box h2 {
+        font-size: 2rem;
+    }
+
+    .info-box p {
+        font-size: 1rem;
+    }
+
+    .hexagon:nth-child(10) {
+        transform: rotate(10deg) translate(170px) rotate(0deg);
+    }
+
+    .hexagon:nth-child(10) span {
+        transform: rotate(-10deg);
+    }
+
+    .hexagon:nth-child(2) {
+        transform: rotate(50deg) translate(170px) rotate(0deg);
+    }
+
+    .hexagon:nth-child(2) span {
+        transform: rotate(-50deg);
+    }
+
+    .hexagon:nth-child(3) {
+        transform: rotate(90deg) translate(170px) rotate(0deg);
+    }
+
+    .hexagon:nth-child(3) span {
+        transform: rotate(-90deg);
+    }
+
+    .hexagon:nth-child(4) {
+        transform: rotate(130deg) translate(170px) rotate(-180deg);
+    }
+
+    .hexagon:nth-child(4) span {
+        transform: rotate(50deg);
+    }
+
+    .hexagon:nth-child(5) {
+        transform: rotate(170deg) translate(170px) rotate(-180deg);
+    }
+
+    .hexagon:nth-child(5) span {
+        transform: rotate(10deg);
+    }
+
+    .hexagon:nth-child(6) {
+        transform: rotate(210deg) translate(170px) rotate(-180deg);
+    }
+
+    .hexagon:nth-child(6) span {
+        transform: rotate(-30deg);
+    }
+
+    .hexagon:nth-child(7) {
+        transform: rotate(250deg) translate(170px) rotate(-180deg);
+    }
+
+    .hexagon:nth-child(7) span {
+        transform: rotate(-70deg);
+    }
+
+    .hexagon:nth-child(8) {
+        transform: rotate(290deg) translate(170px) rotate(-180deg);
+    }
+
+    .hexagon:nth-child(8) span {
+        transform: rotate(-110deg);
+    }
+
+    .hexagon:nth-child(9) {
+        transform: rotate(330deg) translate(170px) rotate(-360deg);
+    }
+}
+
+@media (max-width: 980px) {
+    .hexagon-container {
+        width: 500px;
+        height: 500px;
+    }
+
+    .hexagon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .hexagon span {
+        font-size: 0.58rem;
+    }
+
+    .nonagone {
+        width: 100px;
+        height: 100px;
+        font-size: 0.8rem;
+    }
+
+    .info-box {
+        height: 300px;
+    }
+
+    .info-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-box p {
+        font-size: 0.8rem;
+    }
+
+    .hexagon:nth-child(10) {
+        transform: rotate(10deg) translate(140px) rotate(0deg);
+    }
+
+    .hexagon:nth-child(10) span {
+        transform: rotate(-10deg);
+    }
+
+    .hexagon:nth-child(2) {
+        transform: rotate(50deg) translate(140px) rotate(0deg);
+    }
+
+    .hexagon:nth-child(2) span {
+        transform: rotate(-50deg);
+    }
+
+    .hexagon:nth-child(3) {
+        transform: rotate(90deg) translate(140px) rotate(0deg);
+    }
+
+    .hexagon:nth-child(3) span {
+        transform: rotate(-90deg);
+    }
+
+    .hexagon:nth-child(4) {
+        transform: rotate(130deg) translate(140px) rotate(-180deg);
+    }
+
+    .hexagon:nth-child(4) span {
+        transform: rotate(50deg);
+    }
+
+    .hexagon:nth-child(5) {
+        transform: rotate(170deg) translate(140px) rotate(-180deg);
+    }
+
+    .hexagon:nth-child(5) span {
+        transform: rotate(10deg);
+    }
+
+    .hexagon:nth-child(6) {
+        transform: rotate(210deg) translate(140px) rotate(-180deg);
+    }
+
+    .hexagon:nth-child(6) span {
+        transform: rotate(-30deg);
+    }
+
+    .hexagon:nth-child(7) {
+        transform: rotate(250deg) translate(140px) rotate(-180deg);
+    }
+
+    .hexagon:nth-child(7) span {
+        transform: rotate(-70deg);
+    }
+
+    .hexagon:nth-child(8) {
+        transform: rotate(290deg) translate(140px) rotate(-180deg);
+    }
+
+    .hexagon:nth-child(8) span {
+        transform: rotate(-110deg);
+    }
+
+    .hexagon:nth-child(9) {
+        transform: rotate(330deg) translate(140px) rotate(-360deg);
     }
 }
