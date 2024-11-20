@@ -5,6 +5,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    margin: 40px 0;
 }
 
 .carousel-container {
@@ -60,7 +61,7 @@
 }
 
 .image-title p {
-    margin-bottom: 15%;
+    cursor: pointer;
 }
 
 button.prev,

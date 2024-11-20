@@ -288,6 +288,9 @@
 }
 
 .accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     background: linear-gradient(90deg, rgba(45, 48, 143, 1) 0%, rgba(53, 166, 222, 1) 100%);
     color: white;
@@ -298,6 +301,17 @@
     cursor: pointer;
     border: none;
     outline: none;
+    position: relative;
+}
+
+.accordion-arrow {
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.accordion-arrow.open {
+    transform: rotate(90deg);
 }
 
 .accordion-content {

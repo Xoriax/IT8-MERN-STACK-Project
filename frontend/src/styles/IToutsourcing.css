@@ -1,0 +1,127 @@
+.IToutsourcing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-IToutsourcing {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-image: url('../assets/images/dropdown/HeroBackgroundInfogerance.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.hero-overlay-IToutsourcing {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(45, 48, 143, 0.9) 0%, rgba(53, 166, 222, 0.2) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-overlay-IToutsourcing-text {
+    width: 50%;
+    padding: 2rem;
+    color: white;
+    box-sizing: border-box;
+}
+
+.hero-overlay-IToutsourcing h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.IToutsourcing-banner {
+    width: 100%;
+    padding: 20px 0;
+    background: linear-gradient(90deg, rgba(45, 48, 143, 1) 0%, rgba(53, 166, 222, 1) 100%);
+    text-align: center;
+}
+
+.IToutsourcing-banner h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 1rem;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 20px;
+    margin: 30px 0;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: -20px 20px 30px -20px #007bff;
+}
+
+.info-box-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-box-image {
+    flex: 1;
+    max-width: 45%;
+    margin-right: 100px;
+}
+
+.info-box-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.info-box-text {
+    flex: 2;
+    text-align: center;
+    padding: 10px;
+}
+
+.info-box-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #2D308F;
+}
+
+.info-box-text p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .info-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-box-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box-image {
+        max-width: 80%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .info-box-text {
+        padding: 0;
+        text-align: center;
+    }
+}

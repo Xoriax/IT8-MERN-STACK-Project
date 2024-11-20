@@ -101,6 +101,9 @@ function OnSiteManagement() {
                                 onClick={() => setActiveIndex(activeIndex === index ? null : index)}
                             >
                                 {title}
+                                <span className={`accordion-arrow ${activeIndex === index ? 'open' : ''}`}>
+                                    &#x276F;
+                                </span>
                             </button>
                             {activeIndex === index && (
                                 <div className="accordion-content">
