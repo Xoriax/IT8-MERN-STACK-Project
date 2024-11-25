@@ -56,7 +56,9 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className="dropdown">
-                        <span>Prestations externalisées</span>
+                        <Link to="/OurServices" onClick={() => setMenuOpen(false)}>
+                            Nos Services
+                        </Link>
                         <ul className="dropdown-menu">
                             <li>
                                 <Link to="/IToutsourcing" onClick={() => setMenuOpen(false)}>
@@ -96,8 +98,8 @@ function Navbar() {
                         </ul>
                     </li>
                     <li>
-                        <Link to="/OnSiteManagement" onClick={() => setMenuOpen(false)}>
-                            Régie sur site
+                        <Link to="/HelpDesk" onClick={() => setMenuOpen(false)}>
+                            Notre HelpDesk
                         </Link>
                     </li>
                 </ul>

@@ -3,6 +3,8 @@ import '../styles/Card/CardMichel.css';
 import WavingHand from '../assets/images/Card/waving-hand.png';
 import LinkedinIcon from '../assets/images/Card/LinkedinIcon.png';
 
+import QRCODEMICHEL from '../assets/images/Card/MICHELQRCODE.png'
+
 function CardMichel() {
     return (
         <div className="container-card-michel">
@@ -32,6 +34,9 @@ function CardMichel() {
                                 <img src={LinkedinIcon} alt="LinkedIn" />
                             </a>
                         </div>
+
+                        <img className="back-card-qr-michel" src={QRCODEMICHEL} alt="QR Code" />
+
                     </div>
                 </div>
             </div>

@@ -131,3 +131,18 @@
 .card-david:hover .card-inner-david {
     transform: rotateY(180deg);
 }
+
+.back-card-qr-david {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+    height: auto;
+    opacity: 0.9;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-card-qr-david:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}

@@ -3,6 +3,8 @@ import '../styles/Card/CardDavid.css';
 import WavingHand from '../assets/images/Card/waving-hand.png';
 import LinkedinIcon from '../assets/images/Card/LinkedinIcon.png';
 
+import QRCODEDAVID from '../assets/images/Card/DAVIDQRCODE.png'
+
 function CardDavid() {
     return (
         <div className="container-card-david">
@@ -17,7 +19,7 @@ function CardDavid() {
                     <div className="back-david">
                         <img className="back-card-img-david" src={WavingHand} alt="Waving hand" />
                         <h1 className="back-card-h1-david">
-                            DAVID <span className="back-card-span-david">DO</span>
+                            DAVID <span className="back-card-span-david"><br />DO</span>
                         </h1>
                         <p className="back-card-p-david">
                             Texte présentation de la personne pour expliquer qui il est au sein d' <span className="back-card-span-david">IT8 SOLUTIONS</span>
@@ -32,6 +34,8 @@ function CardDavid() {
                                 <img src={LinkedinIcon} alt="LinkedIn" />
                             </a>
                         </div>
+
+                        <img className="back-card-qr-david" src={QRCODEDAVID} alt="QR Code" />
                     </div>
                 </div>
             </div>

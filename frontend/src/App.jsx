@@ -10,7 +10,8 @@ import ML from './pages/dropdown/ML';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhoWeAre from './pages/WhoWeAre';
-import OnSiteManagement from './pages/OnSiteManagement';
+import OurServices from './pages/OurServices';
+import HelpDesk from './pages/HelpDesk';
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
         <Route path="/TT" element={<TT />} />
         <Route path="/ML" element={<ML />} />
         <Route path="/WhoWeAre" element={<WhoWeAre />} />
-        <Route path="/OnSiteManagement" element={<OnSiteManagement />} />
+        <Route path="/OurServices" element={<OurServices />} />
+        <Route path="/HelpDesk" element={<HelpDesk />} />
       </Routes>
       <Footer />
     </Router>

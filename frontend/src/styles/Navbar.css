@@ -171,7 +171,7 @@
     font-weight: bold;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
     .navbar-links {
         display: none;
     }
