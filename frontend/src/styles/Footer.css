@@ -46,13 +46,15 @@
 }
 
 .footer-middle-box h3,
-.footer-right-box h3 {
+.footer-right-box h3,
+.footer-helpdesk-box h3 {
     color: #fff;
     margin: 0;
+    font-size: 1.4rem;
 }
 
 .footer-left-box p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .footer-right-box {
@@ -124,11 +126,6 @@
     text-align: left;
 }
 
-.footer-helpdesk-box h3 {
-    color: #fff;
-    margin: 0;
-}
-
 .footer-helpdesk-box .contact-item {
     display: flex;
     align-items: center;
@@ -170,6 +167,8 @@
 
 .h3-autoscroll {
     color: #fff;
+    margin: 20px 0;
+    font-size: 1.5rem;
     text-align: center;
 }
 
