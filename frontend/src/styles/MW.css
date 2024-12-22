@@ -1,14 +1,14 @@
-.TT {
+.MW {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.hero-TT {
+.hero-MW {
     position: relative;
     width: 100%;
     height: 40vh;
-    background-image: url('../assets/images/dropdown/HeroBackgroundTelephonieTeams.png');
+    background-image: url('../assets/images/dropdown/HeroBackgroundMaterielsLogiciels.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -17,7 +17,7 @@
     box-sizing: border-box;
 }
 
-.hero-overlay-TT {
+.hero-overlay-MW {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -28,21 +28,26 @@
     justify-content: center;
 }
 
-.hero-overlay-TT-text {
+.hero-overlay-MW-text {
     width: 50%;
     padding: 2rem;
     color: white;
     box-sizing: border-box;
 }
 
-.hero-overlay-TT h1 {
+.hero-overlay-MW h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-h4 {
-    text-align: left;
-    text-decoration: underline;
+.info-box-text-end {
+    flex: 2;
+    text-align: center;
+    padding: 10px;
+}
+
+.info-box-text-end p{
+    font-size: 1rem;
     color: #333;
-    font-size: 1.2rem;
+    text-align: center;
 }

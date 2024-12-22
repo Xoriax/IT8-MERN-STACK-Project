@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/OurServices.css';
 import Logo from '../assets/images/Footer/IT8LogoFooter.png';
 
@@ -7,35 +8,36 @@ function OurServices() {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 830);
 
     const titles = [
-        'Support et assistance utilisateurs',
-        'Administration de la messagerie',
-        'Administration du réseau et des serveurs',
-        'Sécurité de l’infrastructure',
-        'Gestion des sauvegardes',
-        'Gestion de la mobilité',
-        'Audit et Conseil',
-    ];
-
-    const descriptions = [
-        'Support utilisateur illimité, à distance et sur site.',
-        'Gestion complète de votre messagerie Office 365.',
-        'Administration de vos réseaux et serveurs.',
-        'Protection de vos infrastructures informatiques.',
-        'Solutions de sauvegarde sécurisées sur site et hors site.',
-        'Facilitez le travail en mobilité en toute sécurité.',
-        'Audits et conseils pour optimiser vos systèmes.',
+        'Infogérance',
+        'Solution Collaborative',
+        'Téléphonie',
+        'Sécurité Informatique',
+        'Matériels / Logiciels',
+        'Sauvegarde et sécurisation des données',
+        'Modern Workplace',
     ];
 
     const details_description = [
-        'Nous mettons à votre disposition un support utilisateur illimité, disponible à distance ou sur site. Nos experts sont à votre écoute pour résoudre tous vos problèmes techniques rapidement et efficacement, afin d’assurer la continuité de vos activités.',
-        'Nous assurons l’administration complète de votre messagerie professionnelle via Office 365. Nous gérons la configuration, la sécurité, ainsi que la maintenance de vos outils de communication pour vous offrir une expérience fluide et sécurisée.',
-        'Nos services incluent la gestion et l’administration de votre réseau informatique et de vos serveurs. Nous veillons à leur performance, leur sécurité et leur disponibilité, pour garantir un environnement de travail optimal.',
-        'La sécurité de votre infrastructure est primordiale. Nous mettons en place des mesures de protection adaptées pour prévenir toute menace, qu’il s’agisse de cyberattaques ou de défaillances techniques.',
-        'Nous gérons vos sauvegardes, tant sur site que hors-site, pour protéger vos données contre toute perte accidentelle. Vous pouvez ainsi bénéficier d’une solution de sauvegarde fiable et sécurisée, accessible à tout moment.',
-        'Nous vous accompagnons dans la gestion de la mobilité, en vous permettant de travailler en toute sécurité depuis n’importe où, grâce à des solutions adaptées pour vos collaborateurs en déplacement ou en télétravail.',
-        'Nos services incluent des audits complets de vos systèmes informatiques. Nous analysons vos besoins et vous fournissons des recommandations et conseils pour optimiser vos infrastructures et vos processus.',
+        "L'infogérance informatique est un service clé qui vous permet de déléguer la gestion de votre infrastructure informatique à des experts, garantissant ainsi la performance et la sécurité de vos systèmes. Avec notre approche de maintenance 360°, nous offrons un suivi complet incluant la supervision, la mise à jour, le support technique et la sauvegarde de vos données. Notre objectif est de vous permettre de vous concentrer sur votre cœur de métier, en assurant une disponibilité optimale de votre parc informatique. Profitez d’une tranquillité d'esprit grâce à notre expertise, et optimisez votre efficacité opérationnelle avec des solutions sur mesure, adaptées à vos besoins spécifiques. Ensemble, faisons de votre environnement numérique un atout stratégique.",
+        "Confiez-nous l'intégration de ces solutions au sein de votre entreprise. Nos experts vous accompagnent à chaque étape, de l'analyse de vos besoins à la mise en place et au paramétrage des outils, en passant par la formation de vos équipes. Nous veillons à ce que la transition se déroule de manière fluide et que vous puissiez exploiter pleinement le potentiel de ces plateformes collaboratives pour optimiser votre organisation et gagner en efficacité. ",
+        "Dans un monde professionnel en constante évolution, une communication fluide et efficace est primordiale. C'est là qu'intervient la téléphonie d'entreprise, bien plus qu'un simple outil pour passer des appels. En intégrant des solutions comme IP Centrex, Teams, Mobile et Fibre, vous accédez à une panoplie d'avantages pour optimiser vos communications internes et externes. ",
+        "Parce que la sécurité de vos données est primordiale, IT8 Solutions, en partenariat avec Sophos, vous propose une offre complète pour protéger votre parc informatique et garantir la sérénité de votre activité. ",
+        'Nous gérons vos sauvegardes, tant sur site que hors-site...',
+        'Nous vous accompagnons dans la gestion de la mobilité...',
+        'Nos services incluent des audits complets de vos systèmes informatiques...',
     ];
 
+    const links = [
+        '/IToutsourcing',
+        '/CollabSolu',
+        '/TT',
+        '/Cybersecurity',
+        '/ML',
+        '/Conseils',
+        '/MW',
+    ];
+
+    // Gère la taille de l'écran
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 830);
@@ -44,15 +46,27 @@ function OurServices() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    // Fonction pour fermer la description si un clic se produit en dehors de l'écran
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (!event.target.closest('.hexagon-container') && !event.target.closest('.info-box')) {
+                setActiveIndex(null);
+            }
+        };
+
+        document.addEventListener('click', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, []);
+
     return (
         <div className="OurServices">
             <section className="hero-OurServices">
                 <div className="hero-overlay-OurServices">
                     <div className="hero-overlay-OurServices-text">
                         <h1>Nos Services</h1>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempore illo voluptates ex asperiores animi commodi, facere magnam aut cumque quisquam nesciunt vel illum enim obcaecati. Veritatis impedit nobis doloremque.
-                        </p>
                     </div>
                 </div>
             </section>
@@ -61,18 +75,15 @@ function OurServices() {
                 <section className="hexagon-text-section">
                     <div className="hexagon-container">
                         <div className="nonagone">
-                            {activeIndex !== null ? (
-                                <p>{descriptions[activeIndex]}</p>
-                            ) : (
-                                <img src={Logo} alt="Logo" className="center-logo" />
-                            )}
+                            <img src={Logo} alt="Logo" className="center-logo" />
                         </div>
                         {titles.map((title, index) => (
                             <div
                                 key={index}
                                 className="hexagon"
                                 onMouseEnter={() => setActiveIndex(index)}
-                                onMouseLeave={() => setActiveIndex(null)}
+                                onMouseLeave={() => activeIndex === null && setActiveIndex(null)}
+                                onClick={() => setActiveIndex(index === activeIndex ? null : index)}
                             >
                                 <span>{title}</span>
                             </div>
@@ -81,6 +92,11 @@ function OurServices() {
                     <div className="info-box">
                         <h2>{activeIndex !== null ? titles[activeIndex] : "Sélectionnez un service"}</h2>
                         <p>{activeIndex !== null ? details_description[activeIndex] : "Passez la souris sur un hexagone pour voir plus de détails."}</p>
+                        {activeIndex !== null && (
+                            <Link to={links[activeIndex]}>
+                                <button className="btn-detail">En Savoir Plus</button>
+                            </Link>
+                        )}
                     </div>
                 </section>
             ) : (
@@ -99,6 +115,9 @@ function OurServices() {
                             {activeIndex === index && (
                                 <div className="accordion-content">
                                     <p>{details_description[index]}</p>
+                                    <Link to={links[index]}>
+                                        <button className="btn-detail">Détail</button>
+                                    </Link>
                                 </div>
                             )}
                         </div>

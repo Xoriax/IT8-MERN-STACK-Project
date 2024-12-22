@@ -93,7 +93,7 @@ function WhoWeAre() {
             </div>
 
             <div className="WhoWeAre-banner">
-                <h3>Nos Dirigeants</h3>
+                <h3>une vision de 2 hommes</h3>
             </div>
 
             <div className="card-container">

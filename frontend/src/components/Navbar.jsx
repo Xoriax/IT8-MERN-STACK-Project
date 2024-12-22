@@ -73,20 +73,14 @@ function Navbar() {
                             </li>
 
                             <li>
-                                <Link to="/Cybersecuriry" onClick={() => setMenuOpen(false)}>
-                                    Cybersécurité
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link to="/DBM" onClick={() => setMenuOpen(false)}>
-                                    Sauvegarde et Gestion de Données
-                                </Link>
-                            </li>
-
-                            <li>
                                 <Link to="/TT" onClick={() => setMenuOpen(false)}>
-                                    Téléphonie / TEAMS
+                                    Téléphonie
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to="/Cybersecurity" onClick={() => setMenuOpen(false)}>
+                                    Sécurité Informatique
                                 </Link>
                             </li>
 
@@ -95,11 +89,28 @@ function Navbar() {
                                     Matériels / Logiciels
                                 </Link>
                             </li>
+
+                            <li>
+                                <Link to="/DBM" onClick={() => setMenuOpen(false)}>
+                                    Sauvegarde et sécurisation des données
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to="/MW" onClick={() => setMenuOpen(false)}>
+                                    Modern Workspace
+                                </Link>
+                            </li>
                         </ul>
                     </li>
                     <li>
                         <Link to="/HelpDesk" onClick={() => setMenuOpen(false)}>
                             Notre HelpDesk
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/Conseils" onClick={() => setMenuOpen(false)}>
+                            Conseils
                         </Link>
                     </li>
                 </ul>

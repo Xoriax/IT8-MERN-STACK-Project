@@ -37,7 +37,8 @@
 }
 
 .front-michel {
-    background: url('../../assets/images/Card/michel.jpg') center/cover no-repeat;
+    /*background: url('../../assets/images/Card/michel.jpg') center/cover no-repeat;*/ /*ligne pour img plus tard*/
+    background-color: #333;
     padding: 60px 40px;
     display: flex;
     flex-direction: column;

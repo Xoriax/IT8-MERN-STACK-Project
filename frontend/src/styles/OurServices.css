@@ -307,6 +307,23 @@
     font-weight: bold;
 }
 
+.btn-detail {
+    background-color: #2d308f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-detail:hover {
+    background-color: #3ba0d3;
+}
+
 @media (max-width: 1810px) {
     .hexagon-container {
         width: 500px;
