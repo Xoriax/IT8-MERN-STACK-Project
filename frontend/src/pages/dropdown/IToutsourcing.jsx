@@ -2,6 +2,8 @@ import React from 'react';
 import '../../styles/IToutsourcing.css';
 import Carousel from '../../components/Carousel';
 import itOutsourcingImage from '../../assets/images/dropdown/ImageInfogerance.png';
+import itoutsourcing360 from '../../assets/images/dropdown/itoutsourcing360.png';
+import delegration_perso from '../../assets/images/dropdown/delegration_perso.webp'
 
 function IToutsourcing() {
     return (
@@ -52,12 +54,12 @@ function IToutsourcing() {
                         </p>
                     </div>
                     <div className="info-box-image">
-                        <img src={itOutsourcingImage} alt="IT Outsourcing" />
+                        <img src={itoutsourcing360} alt="IT Outsourcing 360" />
                     </div>
                 </div>
                 <div className="info-box-content">
                     <div className="info-box-image">
-                        <img src={itOutsourcingImage} alt="IT Outsourcing" />
+                        <img src={delegration_perso} alt="Delegation de personnel" />
                     </div>
                     <div className="info-box-text">
                         <h2>Bénéficiez d'une infogérance informatique sur-mesure avec la délégation de personnel. </h2>

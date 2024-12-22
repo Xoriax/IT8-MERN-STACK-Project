@@ -1,7 +1,16 @@
 import React from 'react';
 import '../../styles/Cybersecurity.css';
 import Carousel from '../../components/Carousel';
-import CybersecurityImage from '../../assets/images/dropdown/ImageCybersecurite.png';
+import CS from '../../assets/images/dropdown/CS.png';
+import FW from '../../assets/images/dropdown/FW.jpg';
+import AV from '../../assets/images/dropdown/AV.png';
+import Sophos from '../../assets/images/dropdown/Sophos.png';
+import SophosEndpoint from '../../assets/images/dropdown/SophosEndpoint.png';
+import SophosNetwork from '../../assets/images/dropdown/SophosNetwork.png';
+import SophosSecOps from '../../assets/images/dropdown/SophosSecOps.png';
+import SophosEmails from '../../assets/images/dropdown/SophosEmails.png';
+import SophosCloud from '../../assets/images/dropdown/SophosCloud.png';
+import SophosMDR from '../../assets/images/dropdown/SophosMDR.webp';
 
 function Cybersecurity() {
     return (
@@ -17,7 +26,7 @@ function Cybersecurity() {
             <section className="info-box">
                 <div className="info-box-content">
                     <div className="info-box-image">
-                        <img src={CybersecurityImage} alt="IT Outsourcing" />
+                        <img src={CS} alt="IT Outsourcing" />
                     </div>
                     <div className="info-box-text">
                         <h2>Protégez votre capital numérique : La sécurité informatique by IT8 Solutions </h2>
@@ -43,13 +52,13 @@ function Cybersecurity() {
                         </p>
                     </div>
                     <div className="info-box-image">
-                        <img src={CybersecurityImage} alt="IT Outsourcing" />
+                        <img src={FW} alt="Firewalling " />
                     </div>
                 </div>
 
                 <div className="info-box-content">
                     <div className="info-box-image">
-                        <img src={CybersecurityImage} alt="IT Outsourcing" />
+                        <img src={AV} alt="Antivirus" />
                     </div>
                     <div className="info-box-text">
                         <h4>Antivirus :</h4>
@@ -82,93 +91,85 @@ function Cybersecurity() {
                             Faites confiance à IT8 Solutions et Sophos pour protéger votre capital numérique et vous accompagner dans un monde digital en constante évolution.
                             N'hésitez pas à nous contacter pour obtenir une analyse personnalisée de vos besoins en sécurité informatique.
                         </p>
-                    </div>
-                    <div className="info-box-image">
-                        <img src={CybersecurityImage} alt="IT Outsourcing" />
-                    </div>
-                </div>
-
-                <div className="info-box-content">
-                    <div className="info-box-image">
-                        <img src={CybersecurityImage} alt="IT Outsourcing" />
-                    </div>
-                    <div className="info-box-text">
                         <h4>Les solutions Sophos couvrent</h4>
                         <p>
                             Des solutions synchronisées pour des défenses plus intelligentes, plus rapides et plus efficaces.
                         </p>
                     </div>
+                    <div className="info-box-image">
+                        <img src={Sophos} alt="Sophos Logo" />
+                    </div>
                 </div>
 
                 <div className="info-box-content">
+                    <div className="info-box-image">
+                        <img src={SophosEndpoint} alt="Sophos Endpoint Protection" />
+                    </div>
                     <div className="info-box-text">
                         <h4>Sécurité Endpoint </h4>
                         <p>
                             Une cyber protection supérieure protège votre organisation et vos données contre les logiciels malveillants et les attaques avancées.
                         </p>
                     </div>
-                    <div className="info-box-image">
-                        <img src={CybersecurityImage} alt="IT Outsourcing" />
-                    </div>
                 </div>
 
                 <div className="info-box-content">
-                    <div className="info-box-image">
-                        <img src={CybersecurityImage} alt="IT Outsourcing" />
-                    </div>
                     <div className="info-box-text">
                         <h4>Sécurité Réseau </h4>
                         <p>
                             Connectez vos réseaux en toute sécurité avec des pare-feux, des points d’accès et des switchs Next-Gen qui prennent en charge une architecture ZTNA.
                         </p>
                     </div>
+                    <div className="info-box-image">
+                        <img src={SophosNetwork} alt="Sophos Network Protection" />
+                    </div>
                 </div>
 
                 <div className="info-box-content">
+                    <div className="info-box-image">
+                        <img src={SophosSecOps} alt="Sophos SecOps protection" />
+                    </div>
                     <div className="info-box-text">
                         <h4>Services de sécurité managés – SecOps </h4>
                         <p>
                             Tirez profit de résultats de sécurité supérieurs fournis en tant que service.
                         </p>
                     </div>
-                    <div className="info-box-image">
-                        <img src={CybersecurityImage} alt="IT Outsourcing" />
-                    </div>
                 </div>
 
                 <div className="info-box-content">
-                    <div className="info-box-image">
-                        <img src={CybersecurityImage} alt="IT Outsourcing" />
-                    </div>
                     <div className="info-box-text">
                         <h4>Sécurité des messageries </h4>
                         <p>
                             Protection contre les logiciels malveillants, le phishing et les tentatives d’usurpation d’identité (spoofing).
                         </p>
                     </div>
+                    <div className="info-box-image">
+                        <img src={SophosEmails} alt="Sophos Emails Protection" />
+                    </div>
                 </div>
 
                 <div className="info-box-content">
+                    <div className="info-box-image">
+                        <img src={SophosCloud} alt="Sophos Cloud Protection" />
+                    </div>
                     <div className="info-box-text">
                         <h4>Sécurité du Cloud </h4>
                         <p>
                             Protection des charges de travail Cloud avec des processus CPSM pour surveiller les systèmes et l’infrastructure.
                         </p>
                     </div>
-                    <div className="info-box-image">
-                        <img src={CybersecurityImage} alt="IT Outsourcing" />
-                    </div>
                 </div>
 
                 <div className="info-box-content">
-                    <div className="info-box-image">
-                        <img src={CybersecurityImage} alt="IT Outsourcing" />
-                    </div>
                     <div className="info-box-text">
                         <h4>Managed Detection and Response </h4>
                         <p>
                             Cybersécurité en tant que service, protection contre les ransomwares 24/7 et prévention des violations.
                         </p>
+                    </div>
+                    <div className="info-box-image">
+                        <img src={SophosMDR} alt="IT Outsourcing" />
                     </div>
                 </div>
             </section>

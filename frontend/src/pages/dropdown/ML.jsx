@@ -2,6 +2,7 @@ import React from 'react';
 import '../../styles/ML.css';
 import Carousel from '../../components/Carousel';
 import MLImage from '../../assets/images/dropdown/ImageMaterielsLogiciels.png';
+import DLL from '../../assets/images/dropdown/DLL.png';
 
 function ML() {
     return (
@@ -38,14 +39,11 @@ function ML() {
                             </ul>
                         </p>
                     </div>
-                    <div className="info-box-image">
-                        <img src={MLImage} alt="IT Outsourcing" />
-                    </div>
                 </div>
 
                 <div className="info-box-content">
                     <div className="info-box-image">
-                        <img src={MLImage} alt="IT Outsourcing" />
+                        <img src={DLL} alt="IT Outsourcing" />
                     </div>
                     <div className="info-box-text">
                         <h2>Des offres de leasing flexibles avec DLL</h2>
@@ -73,14 +71,11 @@ function ML() {
                         </p>
                     </div>
                     <div className="info-box-image">
-                        <img src={MLImage} alt="IT Outsourcing" />
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gVBuyfGumZU?si=m-GFzqJJ1VI1yTxN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
 
                 <div className="info-box-content">
-                    <div className="info-box-image">
-                        <img src={MLImage} alt="IT Outsourcing" />
-                    </div>
                     <div className="info-box-text">
                         <h2>Pourquoi nous faire confiance ?</h2>
                         <p>

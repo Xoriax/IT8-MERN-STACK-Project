@@ -1,7 +1,12 @@
 import React from 'react';
 import '../../styles/MW.css';
 import Carousel from '../../components/Carousel';
-import MLImage from '../../assets/images/dropdown/ImageMaterielsLogiciels.png';
+import MoW from '../../assets/images/dropdown/MW.jpg';
+import logitech from '../../assets/images/dropdown/logitech.png';
+import Yealink  from '../../assets/images/dropdown/Yealink.webp';
+import barvo from '../../assets/images/dropdown/barvo.png';
+import Polycom from '../../assets/images/dropdown/Poly.png';
+import PKMW from '../../assets/images/dropdown/PKMW.jpg';
 
 function MW() {
     return (
@@ -17,7 +22,7 @@ function MW() {
             <section className="info-box">
                 <div className="info-box-content">
                     <div className="info-box-image">
-                        <img src={MLImage} alt="IT Outsourcing" />
+                        <img src={MoW} alt="Modern Workspace" />
                     </div>
                     <div className="info-box-text">
                         <h2>Créez un espace de travail moderne avec IT8-Solutions : Votre partenaire pour des salles de réunion connectées</h2>
@@ -52,13 +57,13 @@ function MW() {
                         </p>
                     </div>
                     <div className="info-box-image">
-                        <img src={MLImage} alt="IT Outsourcing" />
+                        <img src={logitech} alt="logitech Logo" />
                     </div>
                 </div>
 
                 <div className="info-box-content">
                     <div className="info-box-image">
-                        <img src={MLImage} alt="IT Outsourcing" />
+                        <img src={Yealink} alt="Yealink logo" />
                     </div>
                     <div className="info-box-text">
                         <p>
@@ -86,13 +91,13 @@ function MW() {
                         </p>
                     </div>
                     <div className="info-box-image">
-                        <img src={MLImage} alt="IT Outsourcing" />
+                        <img src={barvo} alt="barvo logo" />
                     </div>
                 </div>
 
                 <div className="info-box-content">
                     <div className="info-box-image">
-                        <img src={MLImage} alt="IT Outsourcing" />
+                        <img src={Polycom} alt="Poly logo" />
                     </div>
                     <div className="info-box-text">
                         <p>
@@ -120,7 +125,7 @@ function MW() {
                         </p>
                     </div>
                     <div className="info-box-image">
-                        <img src={MLImage} alt="IT Outsourcing" />
+                        <img src={PKMW} alt="IT Outsourcing" />
                     </div>
                 </div>
 

@@ -2,6 +2,8 @@ import React from 'react';
 import '../../styles/DBM.css';
 import Carousel from '../../components/Carousel';
 import DBMImage from '../../assets/images/dropdown/ImageSauvegardeGestionDonnees.png';
+import Synology from '../../assets/images/dropdown/Synology.png';
+import ExpIT8 from '../../assets/images/dropdown/ExpIT8.png';
 
 function DBM() {
     return (
@@ -51,13 +53,13 @@ function DBM() {
                         </p>
                     </div>
                     <div className="info-box-image">
-                        <img src={DBMImage} alt="IT Outsourcing" />
+                        <img src={Synology} alt="Synology Logo" />
                     </div>
                 </div>
 
                 <div className="info-box-content">
                     <div className="info-box-image">
-                        <img src={DBMImage} alt="IT Outsourcing" />
+                        <img src={ExpIT8} alt="Expertise IT8" />
                     </div>
                     <div className="info-box-text">
                         <h2>L'expertise IT8-Solutions : votre partenaire de confiance </h2>

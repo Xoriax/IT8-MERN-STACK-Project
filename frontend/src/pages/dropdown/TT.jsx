@@ -1,7 +1,12 @@
 import React from 'react';
 import '../../styles/TT.css';
 import Carousel from '../../components/Carousel';
-import TTImage from '../../assets/images/dropdown/ImageTelephonieTeams.png';
+import TTImage from '../../assets/images/dropdown/ImageTelephonieTeams.jpg';
+import IPCentrex from '../../assets/images/dropdown/IPCentrex.jpg'
+import teams from '../../assets/images/dropdown/teams.jpeg'
+import fm from '../../assets/images/dropdown/forfait_mobile.jpg'
+import fibre from '../../assets/images/dropdown/fibre.png'
+import sewanCE from '../../assets/images/dropdown/sewanCE.jpg'
 
 function TT() {
     return (
@@ -69,12 +74,12 @@ function TT() {
                         </p>
                     </div>
                     <div className="info-box-image">
-                        <img src={TTImage} alt="IT Outsourcing" />
+                        <img src={IPCentrex} alt="IPCentrex" />
                     </div>
                 </div>
                 <div className="info-box-content">
                     <div className="info-box-image">
-                        <img src={TTImage} alt="IT Outsourcing" />
+                        <img src={teams} alt="teams" />
                     </div>
                     <div className="info-box-text">
                         <h4>2. Teams</h4>
@@ -108,12 +113,12 @@ function TT() {
                         </p>
                     </div>
                     <div className="info-box-image">
-                        <img src={TTImage} alt="IT Outsourcing" />
+                        <img src={fm} alt="Nos forfait mobile" />
                     </div>
                 </div>
                 <div className="info-box-content">
                     <div className="info-box-image">
-                        <img src={TTImage} alt="IT Outsourcing" />
+                        <img src={fibre} alt="fibre" />
                     </div>
                     <div className="info-box-text">
                         <h4>4. Fibre :</h4>
@@ -132,7 +137,7 @@ function TT() {
                 </div>
                 <div className="info-box-content">
                     <div className="info-box-text">
-                        <h4>5. Sewan_Contact Expérience</h4>
+                        <h4>5. Sewan Contact Expérience</h4>
                         <p>
                             Développée par Sewan, Contact Experience rassemble l’ensemble des solutions visant à démocratiser l’accès à des outils (Numéros d’accueil, SVI avancé et Centre d’appels dans le Cloud, etc) simples, intuitifs, puissants et automatisés qui permettent une gestion professionnelle des interactions clients pour tous types d’entreprises.
                             Cette solution s’articule autour de trois grands blocs fonctionnels :
@@ -146,7 +151,7 @@ function TT() {
                         </p>
                     </div>
                     <div className="info-box-image">
-                        <img src={TTImage} alt="IT Outsourcing" />
+                        <img src={sewanCE} alt="sewan Contact experience" />
                     </div>
                 </div>
             </section>
