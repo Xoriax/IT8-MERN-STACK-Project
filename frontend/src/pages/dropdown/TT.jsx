@@ -5,8 +5,8 @@ import TTImage from '../../assets/images/dropdown/ImageTelephonieTeams.jpg';
 import IPCentrex from '../../assets/images/dropdown/IPCentrex.jpg'
 import teams from '../../assets/images/dropdown/teams.jpeg'
 import fm from '../../assets/images/dropdown/forfait_mobile.jpg'
-import fibre from '../../assets/images/dropdown/fibre.png'
-import sewanCE from '../../assets/images/dropdown/sewanCE.jpg'
+import fibre from '../../assets/images/dropdown/fibre.jpg'
+import sewanCE from '../../assets/images/dropdown/sewanCE.png'
 
 function TT() {
     return (
@@ -59,8 +59,8 @@ function TT() {
                 <div className="info-box-content">
                     <div className="info-box-text">
 
-                        <h4>1. IP Centrex</h4>
                         <p>
+                            <h4>1. IP Centrex</h4>
                             Votre standard téléphonique intelligent dans le Cloud
                             Oubliez les installations complexes et coûteuses d'un standard téléphonique traditionnel. Avec IP Centrex, votre standard téléphonique est hébergé dans le Cloud, accessible partout, tout le temps, via une simple connexion internet.
                             Fonctionnalités clés :
@@ -82,8 +82,9 @@ function TT() {
                         <img src={teams} alt="teams" />
                     </div>
                     <div className="info-box-text">
-                        <h4>2. Teams</h4>
-                        <p>La collaboration et la communication unifiées
+                        <p>
+                            <h4>2. Teams</h4>
+                            La collaboration et la communication unifiées
                             Microsoft Teams est bien plus qu'un simple outil de communication. C'est une plateforme collaborative complète qui rassemble vos appels, messages instantanés, vidéoconférences, partages de documents et bien plus encore, le tout au même endroit.
                             Fonctionnalités clés :
                             <ul>
@@ -98,8 +99,8 @@ function TT() {
                 </div>
                 <div className="info-box-content">
                     <div className="info-box-text">
-                        <h4>3. Nos offres forfaits Mobile :</h4>
                         <p>
+                            <h4>3. Nos offres forfaits Mobile :</h4>
                             Restez joignable partout, tout le temps
                             Avec les forfaits Mobile professionnels, vos collaborateurs restent connectés et joignables où qu'ils soient, transformant leur smartphone en véritable outil de travail mobile.
                             Fonctionnalités clés :
@@ -121,8 +122,8 @@ function TT() {
                         <img src={fibre} alt="fibre" />
                     </div>
                     <div className="info-box-text">
-                        <h4>4. Fibre :</h4>
                         <p>
+                            <h4>4. Fibre :</h4>
                             La garantie d'une connexion internet ultra-performante
                             La technologie Fibre optique offre une connexion internet haut débit incomparable, essentielle pour garantir la qualité de vos communications professionnelles.
                             Avantages clés :
@@ -137,8 +138,8 @@ function TT() {
                 </div>
                 <div className="info-box-content">
                     <div className="info-box-text">
-                        <h4>5. Sewan Contact Expérience</h4>
                         <p>
+                            <h4>5. Sewan Contact Expérience</h4>
                             Développée par Sewan, Contact Experience rassemble l’ensemble des solutions visant à démocratiser l’accès à des outils (Numéros d’accueil, SVI avancé et Centre d’appels dans le Cloud, etc) simples, intuitifs, puissants et automatisés qui permettent une gestion professionnelle des interactions clients pour tous types d’entreprises.
                             Cette solution s’articule autour de trois grands blocs fonctionnels :
                             <ul>

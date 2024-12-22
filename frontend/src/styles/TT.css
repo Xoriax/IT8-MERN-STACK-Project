@@ -22,7 +22,7 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background: linear-gradient(90deg, rgba(45, 48, 143, 0.9) 0%, rgba(53, 166, 222, 0.2) 100%);
+    background: linear-gradient(90deg, hsla(238, 52%, 37%, 0.902) 0%, rgba(53, 166, 222, 0.2) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,7 @@
 
 h4 {
     text-align: left;
-    text-decoration: underline;
+    font-weight: bolder;
     color: #333;
     font-size: 1.2rem;
 }

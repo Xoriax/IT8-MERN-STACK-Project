@@ -3,7 +3,7 @@ import '../../styles/Cybersecurity.css';
 import Carousel from '../../components/Carousel';
 import CS from '../../assets/images/dropdown/CS.png';
 import FW from '../../assets/images/dropdown/FW.jpg';
-import AV from '../../assets/images/dropdown/AV.png';
+import AV from '../../assets/images/dropdown/AV.webp';
 import Sophos from '../../assets/images/dropdown/Sophos.png';
 import SophosEndpoint from '../../assets/images/dropdown/SophosEndpoint.png';
 import SophosNetwork from '../../assets/images/dropdown/SophosNetwork.png';
@@ -38,8 +38,8 @@ function Cybersecurity() {
 
                 <div className="info-box-content">
                     <div className="info-box-text">
-                        <h4>Firewalling :</h4>
                         <p>
+                            <h4>Firewalling :</h4>
                             Votre bouclier numérique contre les intrusions
                             Le firewall est la première ligne de défense de votre réseau informatique. Il agit comme un rempart infranchissable, filtrant les accès et bloquant les intrusions malveillantes en provenance d'internet.
                             Bénéfices du firewalling:
@@ -61,8 +61,8 @@ function Cybersecurity() {
                         <img src={AV} alt="Antivirus" />
                     </div>
                     <div className="info-box-text">
-                        <h4>Antivirus :</h4>
                         <p>
+                            <h4>Antivirus :</h4>
                             Un bouclier impénétrable contre les virus et malwares
                             Les antivirus protègent vos ordinateurs et serveurs contre les programmes malveillants qui peuvent infecter vos systèmes, détruire vos données ou voler vos informations confidentielles.
                             Bénéfices des solutions antivirus :
@@ -91,8 +91,8 @@ function Cybersecurity() {
                             Faites confiance à IT8 Solutions et Sophos pour protéger votre capital numérique et vous accompagner dans un monde digital en constante évolution.
                             N'hésitez pas à nous contacter pour obtenir une analyse personnalisée de vos besoins en sécurité informatique.
                         </p>
-                        <h4>Les solutions Sophos couvrent</h4>
                         <p>
+                            <h4>Les solutions Sophos couvrent</h4>
                             Des solutions synchronisées pour des défenses plus intelligentes, plus rapides et plus efficaces.
                         </p>
                     </div>
@@ -106,8 +106,8 @@ function Cybersecurity() {
                         <img src={SophosEndpoint} alt="Sophos Endpoint Protection" />
                     </div>
                     <div className="info-box-text">
-                        <h4>Sécurité Endpoint </h4>
                         <p>
+                            <h4>Sécurité Endpoint </h4>
                             Une cyber protection supérieure protège votre organisation et vos données contre les logiciels malveillants et les attaques avancées.
                         </p>
                     </div>
@@ -115,8 +115,8 @@ function Cybersecurity() {
 
                 <div className="info-box-content">
                     <div className="info-box-text">
-                        <h4>Sécurité Réseau </h4>
                         <p>
+                            <h4>Sécurité Réseau </h4>
                             Connectez vos réseaux en toute sécurité avec des pare-feux, des points d’accès et des switchs Next-Gen qui prennent en charge une architecture ZTNA.
                         </p>
                     </div>
@@ -130,8 +130,8 @@ function Cybersecurity() {
                         <img src={SophosSecOps} alt="Sophos SecOps protection" />
                     </div>
                     <div className="info-box-text">
-                        <h4>Services de sécurité managés – SecOps </h4>
                         <p>
+                            <h4>Services de sécurité managés – SecOps </h4>
                             Tirez profit de résultats de sécurité supérieurs fournis en tant que service.
                         </p>
                     </div>
@@ -139,8 +139,8 @@ function Cybersecurity() {
 
                 <div className="info-box-content">
                     <div className="info-box-text">
-                        <h4>Sécurité des messageries </h4>
                         <p>
+                            <h4>Sécurité des messageries </h4>
                             Protection contre les logiciels malveillants, le phishing et les tentatives d’usurpation d’identité (spoofing).
                         </p>
                     </div>
@@ -154,8 +154,8 @@ function Cybersecurity() {
                         <img src={SophosCloud} alt="Sophos Cloud Protection" />
                     </div>
                     <div className="info-box-text">
-                        <h4>Sécurité du Cloud </h4>
                         <p>
+                            <h4>Sécurité du Cloud </h4>
                             Protection des charges de travail Cloud avec des processus CPSM pour surveiller les systèmes et l’infrastructure.
                         </p>
                     </div>
@@ -163,8 +163,8 @@ function Cybersecurity() {
 
                 <div className="info-box-content">
                     <div className="info-box-text">
-                        <h4>Managed Detection and Response </h4>
                         <p>
+                            <h4>Managed Detection and Response </h4>
                             Cybersécurité en tant que service, protection contre les ransomwares 24/7 et prévention des violations.
                         </p>
                     </div>

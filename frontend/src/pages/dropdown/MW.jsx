@@ -3,7 +3,7 @@ import '../../styles/MW.css';
 import Carousel from '../../components/Carousel';
 import MoW from '../../assets/images/dropdown/MW.jpg';
 import logitech from '../../assets/images/dropdown/logitech.png';
-import Yealink  from '../../assets/images/dropdown/Yealink.webp';
+import Yealink from '../../assets/images/dropdown/Yealink.webp';
 import barvo from '../../assets/images/dropdown/barvo.png';
 import Polycom from '../../assets/images/dropdown/Poly.png';
 import PKMW from '../../assets/images/dropdown/PKMW.jpg';
@@ -122,16 +122,7 @@ function MW() {
                                 <li>¤ Support continu : Bénéficiez d’un accompagnement technique complet, de l’analyse de vos besoins à la maintenance. </li>
                                 <li>¤ Formation dédiée : Nous formons vos équipes pour une prise en main rapide et efficace des nouveaux équipements. </li>
                             </ul>
-                        </p>
-                    </div>
-                    <div className="info-box-image">
-                        <img src={PKMW} alt="IT Outsourcing" />
-                    </div>
-                </div>
-
-                <div className="info-box-content">
-                    <div className="info-box-text-end">
-                        <p>
+                            <br /><br />
                             Investissez dans la collaboration de demain
                             <br />
                             Avec IT8-Solutions, transformez vos réunions en expériences collaboratives enrichies.
@@ -140,6 +131,9 @@ function MW() {
                             <br />
                             Contactez-nous dès aujourd’hui pour une consultation gratuite et découvrez comment nos solutions Modern Workplace peuvent révolutionner vos espaces de travail !
                         </p>
+                    </div>
+                    <div className="info-box-image">
+                        <img src={PKMW} alt="IT Outsourcing" />
                     </div>
                 </div>
             </section>
