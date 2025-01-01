@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/HelpDesk.css';
 
 import ticketingprocess from '../assets/images/HelpDesk/ProcessTicket.png';
+import ArrowIcon from '../assets/images/WhoWeAre/ArrowIcon.png';
 
 function HelpDesk() {
 
@@ -38,6 +39,12 @@ function HelpDesk() {
             </div>
 
             <div className="HelpDesk-banner">
+                <h3>Processus de Ticketing</h3>
+            </div>
+
+            <img src={ticketingprocess} alt="ticketing process" className="image-helpdesk" />
+
+            <div className="HelpDesk-banner">
                 <h3>Nos dispositifs technologiques</h3>
             </div>
 
@@ -61,7 +68,9 @@ function HelpDesk() {
 
             <div className="text">
                 <p>
-                    Notre HelpDesk est disponible pour répondre à vos demandes et vous accompagner dans vos besoins informatiques du lundi au vendredi, de 9h à 18h.
+                    Notre HelpDesk est disponible pour répondre à vos demandes et vous accompagner dans vos besoins informatiques du 
+                    <br /><br />
+                    <strong>lundi au vendredi, de 9h à 18h.</strong>
                     <br /><br />
                     Ces horaires sont conçus pour vous offrir un support fiable tout au long de la journée, afin de garantir la continuité de vos activités et résoudre vos problèmes techniques dans les meilleurs délais.
                 </p>
@@ -74,39 +83,33 @@ function HelpDesk() {
             <div className="text">
                 <p>
                     Notre service d’assistance est organisé en deux niveaux pour garantir une prise en charge efficace et adaptée à la complexité des demandes. <br />
-                    Assistance Niveau 1 <br />
+                    <strong>Assistance Niveau 1 </strong><br />
                     Le premier niveau est dédié aux demandes les plus simples et à la gestion initiale des incidents. <br />
                     Notre équipe : <br />
                 </p>
                 <ul>
-                    <li>- Identifie et trace chaque incident avec précision.</li>
-                    <li>- Résout les demandes de faible complexité.</li>
-                    <li>- Oriente les cas plus complexes vers le support de Niveau 2 si nécessaire.</li>
-                    <li>- Met à jour les états de configuration et assure le suivi dans un système dédié.</li>
-                    <li>- Fournit des conseils opérationnels pour aider à une résolution rapide.</li>
+                    <li><img src={ArrowIcon} alt="Arrow Icon" className="arrow-icon" /> Identifie et trace chaque incident avec précision.</li>
+                    <li><img src={ArrowIcon} alt="Arrow Icon" className="arrow-icon" /> Résout les demandes de faible complexité.</li>
+                    <li><img src={ArrowIcon} alt="Arrow Icon" className="arrow-icon" /> Oriente les cas plus complexes vers le support de Niveau 2 si nécessaire.</li>
+                    <li><img src={ArrowIcon} alt="Arrow Icon" className="arrow-icon" /> Met à jour les états de configuration et assure le suivi dans un système dédié.</li>
+                    <li><img src={ArrowIcon} alt="Arrow Icon" className="arrow-icon" /> Fournit des conseils opérationnels pour aider à une résolution rapide.</li>
                 </ul>
                 <p>
-                    Assistance Niveau 2 <br />
+                    <strong>Assistance Niveau 2</strong> <br />
                     Le second niveau gère les problématiques plus complexes et assure une supervision proactive. <br />
                     Ce niveau inclut : <br />
                 </p>
                 <ul>
-                    <li>- Le tri et le traitement approfondi des incidents signalés.</li>
-                    <li>- La coordination des changements et mises à jour nécessaires.</li>
-                    <li>- La gestion et le suivi des incidents critiques.</li>
-                    <li>- La mise à jour continue de la base de connaissances pour un partage d’informations efficace.</li>
-                    <li>- Une supervision proactive pour prévenir d’éventuels problèmes avant qu’ils ne surviennent.</li>
+                    <li><img src={ArrowIcon} alt="Arrow Icon" className="arrow-icon" /> Le tri et le traitement approfondi des incidents signalés.</li>
+                    <li><img src={ArrowIcon} alt="Arrow Icon" className="arrow-icon" /> La coordination des changements et mises à jour nécessaires.</li>
+                    <li><img src={ArrowIcon} alt="Arrow Icon" className="arrow-icon" /> La gestion et le suivi des incidents critiques.</li>
+                    <li><img src={ArrowIcon} alt="Arrow Icon" className="arrow-icon" /> La mise à jour continue de la base de connaissances pour un partage d’informations efficace.</li>
+                    <li><img src={ArrowIcon} alt="Arrow Icon" className="arrow-icon" /> Une supervision proactive pour prévenir d’éventuels problèmes avant qu’ils ne surviennent.</li>
                 </ul>
                 <p>
                     Cette structure garantit un support rapide et efficace, quel que soit le niveau de complexité de vos besoins.
                 </p>
             </div>
-
-            <div className="HelpDesk-banner">
-                <h3>Processus de Ticketing</h3>
-            </div>
-
-            <img src={ticketingprocess} alt="ticketing process" className="image-helpdesk" />
 
             <div className="HelpDesk-banner">
                 <h3>Notre Catalogue</h3>
@@ -116,7 +119,7 @@ function HelpDesk() {
                 <div className="accordion-item">
                     <div className="accordion-header" onClick={() => toggleAccordion(0)}>
                         <h4>SUPPORT UTILISATEUR & MAINTENANCE DES POSTES</h4>
-                        <span>{activeIndex === 0 ? '-' : '+'}</span>
+                        <span className={`accordion-arrow ${activeIndex === 0 ? 'active' : ''}`}></span>
                     </div>
                     {activeIndex === 0 && (
                         <div className="accordion-content">
@@ -179,7 +182,7 @@ function HelpDesk() {
                 <div className="accordion-item">
                     <div className="accordion-header" onClick={() => toggleAccordion(1)}>
                         <h4>MAINTENANCE, ADMINISTRATION DES SERVEUR ET SAUVEGARDES</h4>
-                        <span>{activeIndex === 1 ? '-' : '+'}</span>
+                        <span className={`accordion-arrow ${activeIndex === 0 ? 'active' : ''}`}></span>
                     </div>
                     {activeIndex === 1 && (
                         <div className="accordion-content">
@@ -227,7 +230,7 @@ function HelpDesk() {
                 <div className="accordion-item">
                     <div className="accordion-header" onClick={() => toggleAccordion(2)}>
                         <h4>PERIPHERIQUE / CONSEIL & AUDIT / REPORTING</h4>
-                        <span>{activeIndex === 2 ? '-' : '+'}</span>
+                        <span className={`accordion-arrow ${activeIndex === 0 ? 'active' : ''}`}></span>
                     </div>
                     {activeIndex === 2 && (
                         <div className="accordion-content">
@@ -267,7 +270,7 @@ function HelpDesk() {
                 <div className="accordion-item">
                     <div className="accordion-header" onClick={() => toggleAccordion(3)}>
                         <h4>PRESTATION SOUMISES A CHIFFRAGE</h4>
-                        <span>{activeIndex === 3 ? '-' : '+'}</span>
+                        <span className={`accordion-arrow ${activeIndex === 0 ? 'active' : ''}`}></span>
                     </div>
                     {activeIndex === 3 && (
                         <div className="accordion-content">

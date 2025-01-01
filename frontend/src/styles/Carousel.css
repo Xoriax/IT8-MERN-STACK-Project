@@ -42,6 +42,22 @@
     object-fit: cover;
 }
 
+.carousel-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.carousel-link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .image-title {
     position: absolute;
     bottom: 0;
@@ -50,13 +66,9 @@
     color: white;
     font-weight: bold;
     padding: 15px;
-    border-radius: 0 100% 0 0;
     font-size: 18px;
     width: 65%;
-    height: 40%;
-    display: flex;
-    align-items: last baseline;
-    justify-content: cen;
+    border-radius: 0 15px 0 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 

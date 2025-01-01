@@ -54,7 +54,7 @@
 }
 
 .text {
-    width: 95%;
+    width: 75%;
     margin: 20px auto;
     text-align: center;
     font-size: 1.1rem;
@@ -67,7 +67,6 @@
     justify-content: center;
     align-items: center;
     margin: 10px 0;
-    font-weight: bold;
 }
 
 .image-helpdesk {
@@ -144,4 +143,19 @@
     font-size: 0.95rem;
     color: #555;
     line-height: 1.4;
+}
+
+.accordion-arrow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: solid #333;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+}
+
+.accordion-arrow.active {
+    transform: rotate(135deg); /* Rotation de 180° supplémentaire */
 }

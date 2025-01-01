@@ -7,6 +7,11 @@ import teams from '../../assets/images/dropdown/teams.jpeg'
 import fm from '../../assets/images/dropdown/forfait_mobile.jpg'
 import fibre from '../../assets/images/dropdown/fibre.jpg'
 import sewanCE from '../../assets/images/dropdown/sewanCE.png'
+import GainProd from '../../assets/images/dropdown/GainProd.png'
+import IMGPRO from '../../assets/images/dropdown/IMGPRO.png'
+import MF from '../../assets/images/dropdown/MF.png'
+import FiabiliteQualite from '../../assets/images/dropdown/Fiabilite&Qualite.png'
+import tel from '../../assets/images/dropdown/tel.jpg'
 
 function TT() {
     return (
@@ -32,14 +37,72 @@ function TT() {
                             C'est là qu'intervient la téléphonie d'entreprise, bien plus qu'un simple outil pour passer des appels.
                             <br />
                             En intégrant des solutions comme IP Centrex, Teams, Mobile et Fibre, vous accédez à une panoplie d'avantages pour optimiser vos communications internes et externes.
-                            <br />
+                        </p>
+                    </div>
+                </div>
+                <div className="info-box-content">
+                    <div className="info-box-text">
+                        <p>
                             Voici ce que la téléphonie d'entreprise peut apporter à votre activité :
-                            <ul>
-                                <li>¤ Gain de productivité et collaboration accrue: Grâce aux solutions collaboratives comme Teams, vous connectez vos équipes instantanément, où qu'elles soient. Appels vidéo, partage de documents, messagerie instantanée, tout est centralisé pour un travail d'équipe fluide et performant.</li>
-                                <li>¤ Image professionnelle et communication unifiée: Avec IP Centrex, profitez d'un standard téléphonique virtuel performant. Accueil personnalisé, gestion des appels simplifiée, et numérotation non géographique renforcent votre image de marque.</li>
-                                <li>¤ Mobilité et flexibilité: Les offres Mobile vous permettent de rester joignable partout, tout le temps. Vos collaborateurs gèrent leurs appels professionnels en toute liberté, sans contrainte géographique.</li>
-                                <li>¤ Fiabilité et qualité de service: La technologie Fibre garantit une connexion internet ultra-rapide et stable, essentielle pour des communications téléphoniques impeccables, sans interruption ni perte de qualité.</li>
-                            </ul>
+                            <br />
+                            Gain de productivité et collaboration accrue:
+                            <br /><br />
+                            ¤ Grâce aux solutions collaboratives comme Teams, vous connectez vos équipes instantanément, où qu'elles soient.
+                            <br />
+                            ¤ Appels vidéo, partage de documents, messagerie instantanée, tout est centralisé pour un travail d'équipe fluide et performant.
+                        </p>
+                    </div>
+                    <div className="info-box-image">
+                        <img src={GainProd} alt="Gain Productivite" />
+                    </div>
+                </div>
+
+                <div className="info-box-content">
+                    <div className="info-box-image">
+                        <img src={IMGPRO} alt="imagepro" />
+                    </div>
+                    <div className="info-box-text">
+                        <p>
+                            Image professionnelle et communication unifiée:
+                            <br /><br />
+                            ¤ Avec IP Centrex, profitez d'un standard téléphonique virtuel performant.
+                            <br />
+                            ¤ Accueil personnalisé, gestion des appels simplifiée, et numérotation non géographique renforcent votre image de marque.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="info-box-content">
+                    <div className="info-box-text">
+                        <p>
+                            Mobilité et flexibilité:
+                            <br /><br />
+                            ¤ Les offres Mobile vous permettent de rester joignable partout, tout le temps.
+                            <br />
+                            ¤ Vos collaborateurs gèrent leurs appels professionnels en toute liberté, sans contrainte géographique.
+                        </p>
+                    </div>
+                    <div className="info-box-image">
+                        <img src={MF} alt="Mobilite et flexibiliter" />
+                    </div>
+                </div>
+
+                <div className="info-box-content">
+                    <div className="info-box-image">
+                        <img src={FiabiliteQualite} alt="Fiabilite & Qualite" />
+                    </div>
+                    <div className="info-box-text">
+                        <p>
+                            Fiabilité et qualité de service:
+                            <br /><br />
+                            ¤ ¤ La technologie Fibre garantit une connexion internet ultra-rapide et stable, essentielle pour des communications téléphoniques impeccables, sans interruption ni perte de qualité.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="info-box-content">
+                    <div className="info-box-text">
+                        <p>
                             En résumé, la téléphonie d'entreprise vous permet de :
                             <ul>
                                 <li>¤ Améliorer la collaboration interne</li>
@@ -50,7 +113,11 @@ function TT() {
                             Contactez-nous dès aujourd'hui pour découvrir comment nos offres IP Centrex, Teams, Mobile et Fibre peuvent répondre aux besoins spécifiques de votre entreprise et l'accompagner dans son développement.
                         </p>
                     </div>
+                    <div className="info-box-image">
+                        <img src={tel} alt="telephonie" />
+                    </div>
                 </div>
+
                 <div className="info-box-content">
                     <div className="info-box-text">
                         <h2>Zoom sur les technologies qui révolutionnent votre téléphonie d'entreprise :</h2>
