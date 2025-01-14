@@ -36,9 +36,12 @@ function Footer() {
         return () => clearInterval(interval);
     }, []);
 
+    const handleLinkClick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <footer className="footer">
-
             <h3 className='h3-autoscroll'>ILS NOUS FONT CONFIANCE</h3>
 
             <div className="logos-slide-container">
@@ -72,15 +75,15 @@ function Footer() {
                     <h3>Nos Services</h3>
                     <div className="services-columns">
                         <ul>
-                            <li className='navbar-links-hover'><Link to="/IToutsourcing">Infogérance</Link></li>
-                            <li className='navbar-links-hover'><Link to="/CollabSolu">Solutions Collaboratives</Link></li>
-                            <li className='navbar-links-hover'><Link to="/Cybersecuriry">Cybersécurité</Link></li>
-                            <li className='navbar-links-hover'><Link to="/DBM">Sauvegarde et Gestion de Données</Link></li>
+                            <li className='navbar-links-hover'><Link to="/IToutsourcing" onClick={handleLinkClick}>Infogérance</Link></li>
+                            <li className='navbar-links-hover'><Link to="/CollabSolu" onClick={handleLinkClick}>Solutions Collaboratives</Link></li>
+                            <li className='navbar-links-hover'><Link to="/Cybersecurity" onClick={handleLinkClick}>Sécurité Informatique</Link></li>
+                            <li className='navbar-links-hover'><Link to="/DBM" onClick={handleLinkClick}>Sauvegarde et Sécurisation de Données</Link></li>
                         </ul>
                         <ul>
-                            <li className='navbar-links-hover'><Link to="/TT">Téléphonie / TEAMS</Link></li>
-                            <li className='navbar-links-hover'><Link to="/ML">Matériels / Logiciels</Link></li>
-                            <li className='navbar-links-hover'><Link to="/">Régie sur site</Link></li>
+                            <li className='navbar-links-hover'><Link to="/TT" onClick={handleLinkClick}>Téléphonie</Link></li>
+                            <li className='navbar-links-hover'><Link to="/ML" onClick={handleLinkClick}>Matériels / Logiciels</Link></li>
+                            <li className='navbar-links-hover'><Link to="/MW" onClick={handleLinkClick}>Modern Workplace</Link></li>
                         </ul>
                     </div>
                 </div>

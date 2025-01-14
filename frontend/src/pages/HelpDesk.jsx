@@ -23,7 +23,7 @@ function HelpDesk() {
             </section>
 
             <div className="HelpDesk-banner">
-                <h3>C’est quoi le Helpdesk IT8-Solutions ?</h3>
+                <h3>Helpdesk IT8-Solutions</h3>
             </div>
 
             <div className="text">
