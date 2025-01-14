@@ -157,5 +157,5 @@
 }
 
 .accordion-arrow.active {
-    transform: rotate(135deg); /* Rotation de 180° supplémentaire */
+    transform: rotate(135deg);
 }

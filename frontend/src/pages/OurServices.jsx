@@ -92,9 +92,7 @@ function OurServices() {
                                 onClick={() => setActiveIndex(index === activeIndex ? null : index)}
                             >
                                 {title}
-                                <span className={`accordion-arrow ${activeIndex === index ? 'open' : ''}`}>
-                                    &#x276F;
-                                </span>
+                                <span className={`accordion-arrow-service ${activeIndex === index ? 'open' : ''}`}></span>
                             </button>
                             {activeIndex === index && (
                                 <div className="accordion-content">
