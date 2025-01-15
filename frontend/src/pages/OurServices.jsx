@@ -64,9 +64,7 @@ function OurServices() {
                         {titles.map((title, index) => (
                             <div
                                 key={index}
-                                className="hexagon"
-                                onMouseEnter={() => setActiveIndex(index)}
-                                onMouseLeave={() => setActiveIndex(null)}
+                                className={`hexagon ${activeIndex === index ? 'active' : ''}`}
                                 onClick={() => setActiveIndex(index === activeIndex ? null : index)}
                             >
                                 <span>{title}</span>
@@ -75,7 +73,7 @@ function OurServices() {
                     </div>
                     <div className="info-box">
                         <h2>{activeIndex !== null ? titles[activeIndex] : "Sélectionnez un service"}</h2>
-                        <p>{activeIndex !== null ? details_description[activeIndex] : "Passez la souris sur un hexagone pour voir plus de détails."}</p>
+                        <p>{activeIndex !== null ? details_description[activeIndex] : "Cliquez sur un hexagone pour voir plus de détails."}</p>
                         {activeIndex !== null && (
                             <Link to={links[activeIndex]}>
                                 <button className="btn-detail">En Savoir Plus</button>
