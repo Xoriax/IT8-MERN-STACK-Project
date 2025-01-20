@@ -1,14 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/Navbar.css';
 import logo from '../assets/images/Navbar/IT8Logo.png';
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
+    const [dropdownClicked, setDropdownClicked] = useState(false);
+    const navigate = useNavigate();
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
+    };
+
+    const handleServicesClick = (e) => {
+        e.preventDefault(); // Empêche la navigation automatique
+        if (dropdownClicked) {
+            // Si le menu est déjà ouvert, redirige vers la page OurServices
+            navigate('/OurServices');
+            setDropdownClicked(false); // Réinitialise l'état
+            setMenuOpen(false); // Ferme le menu burger après le deuxième clic
+        } else {
+            // Affiche le dropdown au premier clic
+            setDropdownClicked(true);
+        }
     };
 
     useEffect(() => {
@@ -56,46 +71,48 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className="dropdown">
-                        <Link to="/OurServices" onClick={() => setMenuOpen(false)}>
+                        <a
+                            href="/OurServices"
+                            onClick={handleServicesClick}
+                            className={dropdownClicked ? 'active' : ''}
+                        >
                             Nos Services
-                        </Link>
-                        <ul className="dropdown-menu">
+                        </a>
+                        <ul
+                            className={`dropdown-menu ${
+                                dropdownClicked ? 'dropdown-visible' : ''
+                            }`}
+                        >
                             <li>
                                 <Link to="/IToutsourcing" onClick={() => setMenuOpen(false)}>
                                     Infogérance
                                 </Link>
                             </li>
-
                             <li>
                                 <Link to="/CollabSolu" onClick={() => setMenuOpen(false)}>
                                     Solutions Collaboratives
                                 </Link>
                             </li>
-
                             <li>
                                 <Link to="/TT" onClick={() => setMenuOpen(false)}>
                                     Téléphonie
                                 </Link>
                             </li>
-
                             <li>
                                 <Link to="/Cybersecurity" onClick={() => setMenuOpen(false)}>
                                     Sécurité Informatique
                                 </Link>
                             </li>
-
                             <li>
                                 <Link to="/ML" onClick={() => setMenuOpen(false)}>
                                     Matériels / Logiciels
                                 </Link>
                             </li>
-
                             <li>
                                 <Link to="/DBM" onClick={() => setMenuOpen(false)}>
                                     Sauvegarde et sécurisation des données
                                 </Link>
                             </li>
-
                             <li>
                                 <Link to="/MW" onClick={() => setMenuOpen(false)}>
                                     Modern Workspace

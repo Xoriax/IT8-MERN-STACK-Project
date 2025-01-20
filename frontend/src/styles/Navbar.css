@@ -50,14 +50,15 @@
 
 .dropdown-menu {
     position: absolute;
-    top: 100%;
+    top: 100%; /* Descend le menu sous l'élément parent */
     left: 0;
     background-color: #fff;
     border: #333 1px solid;
-    border-radius: 20px;
+    border-radius: 10px;
     list-style: none;
     padding: 0.5rem 1rem;
-    display: block;
+    z-index: 15; /* Assurez-vous qu'il passe au-dessus du menu burger */
+    display: none; /* Par défaut, caché */
     min-width: 200px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -220,6 +221,6 @@
     }
 
     .navbar-links.show-menu .dropdown-menu {
-        left: -250px;
+        left: -450px;
     }
 }
