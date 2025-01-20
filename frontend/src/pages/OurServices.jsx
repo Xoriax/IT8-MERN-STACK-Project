@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/OurServices.css';
 import Logo from '../assets/images/Footer/IT8LogoFooter.png';
 
 function OurServices() {
     const [activeIndex, setActiveIndex] = useState(null);
     const [isMobile, setIsMobile] = useState(window.innerWidth < 830);
+    const navigate = useNavigate();
 
     const titles = [
         'Infogérance',
@@ -45,6 +46,12 @@ function OurServices() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    // Fonction pour scroller en haut de la page avant la navigation
+    const handleScrollAndNavigate = (path) => {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scrolle en haut de la page
+        navigate(path); // Navigue vers la nouvelle page
+    };
+
     return (
         <div className="OurServices">
             <section className="hero-OurServices">
@@ -75,9 +82,12 @@ function OurServices() {
                         <h2>{activeIndex !== null ? titles[activeIndex] : "Sélectionnez un service"}</h2>
                         <p>{activeIndex !== null ? details_description[activeIndex] : "Cliquez sur un hexagone pour voir plus de détails."}</p>
                         {activeIndex !== null && (
-                            <Link to={links[activeIndex]}>
-                                <button className="btn-detail">En Savoir Plus</button>
-                            </Link>
+                            <button
+                                className="btn-detail"
+                                onClick={() => handleScrollAndNavigate(links[activeIndex])}
+                            >
+                                En Savoir Plus
+                            </button>
                         )}
                     </div>
                 </section>
@@ -95,9 +105,12 @@ function OurServices() {
                             {activeIndex === index && (
                                 <div className="accordion-content">
                                     <p>{details_description[index]}</p>
-                                    <Link to={links[index]}>
-                                        <button className="btn-detail">Détail</button>
-                                    </Link>
+                                    <button
+                                        className="btn-detail"
+                                        onClick={() => handleScrollAndNavigate(links[index])}
+                                    >
+                                        Détail
+                                    </button>
                                 </div>
                             )}
                         </div>
